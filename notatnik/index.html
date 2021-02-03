@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Notatnik</title>
+    <meta name="description" content="Prosty wizualnie notatnik w MarkDown" />
+    <!-- <meta name="author" content="SitePoint"> -->
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <textarea name="test" id="test" cols="30" rows="10"></textarea>
+    </div>
+    <script>
+      var simplemde = new SimpleMDE({
+        spellChecker: false,
+        autosave: {
+          enabled: true,
+          uniqueId: "MyUniqueID",
+          delay: 1000,
+        },
+      });
+    </script>
+  </body>
+  <style>
+    .CodeMirror,
+    .CodeMirror-line,
+    body {
+      background-color: rgb(247, 247, 247);
+      color: rgb(55, 55, 55);
+    }
+    .CodeMirror,
+    .editor-preview,
+    .editor-preview-side {
+      background: rgb(247, 247, 247);
+      border: none;
+    }
+
+    .CodeMirror-line,
+    p {
+      text-indent: 3em;
+    }
+    .CodeMirror-wrap pre,
+    p {
+      text-align: justify;
+      white-space: unset;
+    }
+
+    .editor-toolbar {
+      border: 1px solid #bbb;
+      border-radius: 4px;
+    }
+
+    #container {
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 10em;
+    }
+  </style>
+</html>
