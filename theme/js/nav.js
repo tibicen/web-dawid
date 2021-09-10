@@ -7,7 +7,6 @@ function onScroll(event) {
 
   $(".nav-link").each(function () {
     var currentLink = $(this);
-    console.log(currentLink)
     var refElement = $(currentLink.attr("href"));
     var siblings = currentLink.closest("li").siblings();
     var targetOffset = refElement.offset().top - 70;
@@ -22,7 +21,6 @@ function onScroll(event) {
 $(function () {
   var speed = 800;
   var topOffset = 0;
-  // console.log(currentLink)
   $("body").on("click", ".nav-link", function (event) {
     var amountToScroll = ($(this.hash).offset().top) - topOffset;
     event.preventDefault();
