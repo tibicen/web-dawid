@@ -1,4 +1,5 @@
 $(document).on("scroll", onScroll);
+var currentLink = null;
 
 function onScroll(event) {
 
@@ -6,6 +7,7 @@ function onScroll(event) {
 
   $(".nav-link").each(function () {
     var currentLink = $(this);
+    console.log(currentLink)
     var refElement = $(currentLink.attr("href"));
     var siblings = currentLink.closest("li").siblings();
     var targetOffset = refElement.offset().top - 70;
@@ -25,8 +27,10 @@ $(function () {
     var amountToScroll = ($(this.hash).offset().top) - topOffset;
     event.preventDefault();
     $("html, body").animate({ scrollTop: amountToScroll }, speed);
-    currentLink.addClass("active");
-    siblings.find(".nav-link").removeClass("active");
+    if (currentLink) {
+      currentLink.addClass("active");
+      siblings.find(".nav-link").removeClass("active");
+    }
   });
   $("body").on("click", ".arrow-down", function (event) {
     var amountToScroll = ($(this.hash).offset().top) - topOffset;
