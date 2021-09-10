@@ -496,7 +496,7 @@ blockquote {
   position: relative;
   bottom: 2em;
   left: 1em;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   height: auto !important;
   width: auto !important;
 }
@@ -854,6 +854,9 @@ header nav ul:hover {
     margin: auto;
   }
 
+  #project-content {
+    margin-top: 7em;
+  }
   #project-content .project-gallery {
     grid-template-columns: auto auto;
   }
