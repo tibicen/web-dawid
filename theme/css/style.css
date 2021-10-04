@@ -837,6 +837,8 @@ header nav ul:hover {
     grid-gap: 1em;
     grid-template-columns: auto auto auto;
     grid-auto-rows: auto;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   #project-list {
