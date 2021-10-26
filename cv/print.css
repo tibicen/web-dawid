@@ -1,0 +1,91 @@
+/**
+* Print stylesheet for yourwebsite.com
+* @version         1.0
+* @lastmodified    16.06.2016
+*/
+
+@media print {
+    nav, #inputArea {
+        display: none;
+        visibility: hidden;
+    }
+    body {
+        background-color: white;
+    }
+    #page {
+        width: 100vw;
+        height: calc( 100vw * 1.41);
+        margin: 0;
+        float: none;
+        box-shadow: none;
+        border-radius: 0;
+        /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    }
+    #info {
+        background-color: hsl(95, 27%, 45%);
+    }
+    #info h1 {
+        font-size: 20pt;
+        font-weight: 400;
+    }
+    #info p {
+        font-weight: 400;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    .timeline-part-title {
+        font-weight: 500;
+        font-size: 9pt;
+    }
+    p,
+    li,
+    .address,
+    .description,
+    .date {
+        font-size: 7pt;
+    }
+    footer {
+        font-size: 6pt;
+        line-height: 6pt;
+        padding: 5pt 20pt;
+    }
+    .link-img {
+        width: 30pt;
+        margin: 10pt;
+    }
+    .job {
+        page-break-before: always;
+        grid-template-columns: 5rem 1fr;
+    }
+    .job .date {
+        margin-top: 3pt;
+    }
+    #timeline {
+        grid-template-rows: auto;
+    }
+    .timeline-part {
+        border-bottom: dashed #0000004b .5pt;
+        padding-top: 4pt;
+    }
+    #other {
+        padding: 0 10pt;
+        /* grid-auto-rows: max-content; */
+        /* grid-template-rows: none; */
+        padding-top: 1em;
+    }
+    .bar-full {
+        height: 90%;
+        border-radius: 2pt;
+    }
+    .other {
+        margin-bottom: 10pt;
+    }
+    .other ul li {
+        margin-left: 1rem;
+    }
+    .skill {
+        grid-auto-columns: 71pt 1fr;
+    }
+}
