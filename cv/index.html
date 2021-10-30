@@ -28,15 +28,15 @@
 
 		
 
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/start-aace6b39.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/chunks/vendor-0330653e.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/layout.svelte-1ca0f140.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/pages/index.svelte-ab6caf53.js">
+		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/start-26cb5482.js">
+		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/chunks/vendor-eb196138.js">
+		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/layout.svelte-b5945994.js">
+		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/pages/index.svelte-3449bebd.js">
 		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/pages/index.svelte-afe6a0f9.css">
+		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/pages/index.svelte-3813dfca.css">
 
 		<script type="module">
-			import { start } from "https://dawid.huczynski.pl/cv/_app/start-aace6b39.js";
+			import { start } from "https://dawid.huczynski.pl/cv/_app/start-26cb5482.js";
 			start({
 				target: document.body,
 				paths: {"base":"/cv","assets":"https://dawid.huczynski.pl/cv"},
@@ -49,8 +49,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("https://dawid.huczynski.pl/cv/_app/layout.svelte-1ca0f140.js"),
-						import("https://dawid.huczynski.pl/cv/_app/pages/index.svelte-ab6caf53.js")
+						import("https://dawid.huczynski.pl/cv/_app/layout.svelte-b5945994.js"),
+						import("https://dawid.huczynski.pl/cv/_app/pages/index.svelte-3449bebd.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -69,15 +69,25 @@
 
 
 
-<nav class="svelte-1i7gbs5">
+
+
+
+
+
+<nav class="svelte-cuxh3e"><button class="svelte-cuxh3e">Load image</button>
+        <input style="display:none;" type="file" accept=".jpg, .jpeg, .png" class="svelte-cuxh3e">
+        <input type="color" class="svelte-cuxh3e" value="#3c64a0">
         
-        <button id="buttonEdit" class="svelte-1i7gbs5">Preview</button>
+        <button id="buttonEdit" class="svelte-cuxh3e">Preview</button>
         
 </nav>
-<div id="main" class="svelte-5uyym3"><textarea id="inputArea" class=" svelte-ryp01x"># Full Name
+<div id="main" class="svelte-19yfuuf"><textarea id="inputArea" class=" svelte-ryp01x"># Full Name
 image:https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 email:
-phone:<br>email:<br>born:<br>website:
+phone:
+email:
+born:
+website:
 
 # Timeline
 
@@ -88,6 +98,15 @@ date
 address
 description/responsibilities
 
+
+## Stage 2
+
+### Position
+date
+address
+description/responsibilities
+
+
 # Other
 
 ## Skills
@@ -95,9 +114,12 @@ description/responsibilities
 -skill two 65%
 
 ## Languages
--language one
--language two</textarea>
-	<div id="page" class="svelte-5uyym3 editorVisible">
+-first language
+-second language
+
+# Footer
+Legal notice etc etc.</textarea>
+	<div id="page" style="--accent-color: #3c64a0;" class="svelte-19yfuuf editorVisible">
 		<div id="info"><div class="profile-picture"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt=""></div>
 	<div contenteditable="false"><h1>Full Name</h1>
 		<p><!-- HTML_TAG_START -->email:<br>phone:<br>email:<br>born:<br>website:<br><!-- HTML_TAG_END --></p></div>
@@ -110,16 +132,22 @@ description/responsibilities
 		<div class="address">address</div>
 		<div class="description">description/responsibilities</div></div></div>
 				
+		</div><div class="timeline-part-title">Stage 2</div>
+		<div class="timeline-part"><div class="job"><div class="date">date</div>
+	<div class="job-info"><h2>Position</h2>
+		<div class="address">address</div>
+		<div class="description">description/responsibilities</div></div></div>
+				
 		</div></div>
 		
 		
 			<div id="other" contenteditable="false"><div class="other"><h2>Skills</h2>
 			<p><!-- HTML_TAG_START --><ul><li class="skill"><p>skill one</p><div class="bar-full"><div class="bar" style="width:80%"><div/><div/><div/></div></div></li><li class="skill"><p>skill two</p><div class="bar-full"><div class="bar" style="width:65%"><div/><div/><div/></div></div></li><br><!-- HTML_TAG_END --></p>
 		</div><div class="other"><h2>Languages</h2>
-			<p><!-- HTML_TAG_START --><ul><li><p>language one</p></li><li><p>language two</p></li><!-- HTML_TAG_END --></p>
+			<p><!-- HTML_TAG_START --><ul><li><p>first language</p></li><li><p>second language</p></li><!-- HTML_TAG_END --></p>
 		</div></div>
 		
-		<footer></footer></div>
+		<footer>Legal notice etc etc.</footer></div>
 </div>
 
 

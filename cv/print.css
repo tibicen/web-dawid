@@ -21,9 +21,7 @@
         border-radius: 0;
         /* border: 1px solid rgba(0, 0, 0, 0.2); */
     }
-    #info {
-        background-color: hsl(95, 27%, 45%);
-    }
+    
     #info h1 {
         font-size: 20pt;
         font-weight: 400;
