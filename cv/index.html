@@ -28,15 +28,15 @@
 
 		
 
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/start-69e945fa.js">
+		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/start-e266e693.js">
 		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/chunks/vendor-eb196138.js">
 		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/layout.svelte-b5945994.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/pages/index.svelte-94626d06.js">
+		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/pages/index.svelte-a3acb7fc.js">
 		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/pages/index.svelte-ef5fbc75.css">
 
 		<script type="module">
-			import { start } from "https://dawid.huczynski.pl/cv/_app/start-69e945fa.js";
+			import { start } from "https://dawid.huczynski.pl/cv/_app/start-e266e693.js";
 			start({
 				target: document.body,
 				paths: {"base":"/cv","assets":"https://dawid.huczynski.pl/cv"},
@@ -50,7 +50,7 @@
 					error: null,
 					nodes: [
 						import("https://dawid.huczynski.pl/cv/_app/layout.svelte-b5945994.js"),
-						import("https://dawid.huczynski.pl/cv/_app/pages/index.svelte-94626d06.js")
+						import("https://dawid.huczynski.pl/cv/_app/pages/index.svelte-a3acb7fc.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -76,7 +76,10 @@
 
 <nav class="svelte-1x1en8l"><button class="svelte-1x1en8l">Load image</button>
         <input style="display:none;" type="file" accept=".jpg, .jpeg, .png" class="svelte-1x1en8l">
-        <input type="color" class="svelte-1x1en8l" value="#3c64a0">
+        
+        <button style="background-color:#3c64a0;color:#ccc;" class="svelte-1x1en8l">Color</button>
+        <input type="color" style="display:none;" class="svelte-1x1en8l" value="#3c64a0">
+        
         
         <button id="buttonEdit" class="svelte-1x1en8l">Preview</button>
         
