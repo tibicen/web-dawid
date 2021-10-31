@@ -54,14 +54,15 @@
         margin: 10pt;
     }
     .job {
-        page-break-before: always;
+        page-break-before: auto;
         grid-template-columns: 5rem 1fr;
     }
     .job .date {
         margin-top: 3pt;
     }
     #timeline {
-        grid-template-rows: auto;
+        /* grid-template-rows: none;
+        grid-auto-rows: max-content; */
     }
     .timeline-part {
         border-bottom: dashed #0000004b .5pt;
@@ -69,8 +70,8 @@
     }
     #other {
         padding: 0 10pt;
-        /* grid-auto-rows: max-content; */
-        /* grid-template-rows: none; */
+        /* grid-auto-rows: max-content;
+        grid-template-rows: none; */
         padding-top: 1em;
     }
     .bar-full {

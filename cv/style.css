@@ -136,7 +136,7 @@ a {
     background-color: #eee;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: max-content;
+    grid-template-rows: min-content;
 }
 
 .timeline-part-title {
