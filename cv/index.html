@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="https://dawid.huczynski.pl/theme/favicons/favicons/apple-touch-icon-57x57.png" />
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<link rel="apple-touch-icon" sizes="57x57" href="https://dawid.huczynski.pl/theme/favicons/favicons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="https://dawid.huczynski.pl/theme/favicons/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="https://dawid.huczynski.pl/theme/favicons/apple-touch-icon-76x76.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="https://dawid.huczynski.pl/theme/favicons/apple-touch-icon-114x114.png" />
@@ -24,170 +22,13 @@
     <meta name="theme-color" content="#92ac41" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="print.css">
-    <title>CV</title>
 
-		
 
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/start-e266e693.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/chunks/vendor-eb196138.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/layout.svelte-b5945994.js">
-		<link rel="modulepreload" href="https://dawid.huczynski.pl/cv/_app/pages/index.svelte-a3acb7fc.js">
-		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="https://dawid.huczynski.pl/cv/_app/assets/pages/index.svelte-ef5fbc75.css">
+	<link rel='stylesheet' href='./build/bundle.css'>
 
-		<script type="module">
-			import { start } from "https://dawid.huczynski.pl/cv/_app/start-e266e693.js";
-			start({
-				target: document.body,
-				paths: {"base":"/cv","assets":"https://dawid.huczynski.pl/cv"},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("https://dawid.huczynski.pl/cv/_app/layout.svelte-b5945994.js"),
-						import("https://dawid.huczynski.pl/cv/_app/pages/index.svelte-a3acb7fc.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "\u002F",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
-			});
-		</script>
+	<script defer src='./build/bundle.js'></script>
 </head>
 
 <body>
-    <div id="svelte">
-
-
-
-
-
-
-
-
-
-<nav class="svelte-1x1en8l"><button class="svelte-1x1en8l">Load image</button>
-        <input style="display:none;" type="file" accept=".jpg, .jpeg, .png" class="svelte-1x1en8l">
-        
-        <button style="background-color:#3c64a0;color:#ccc;" class="svelte-1x1en8l">Color</button>
-        <input type="color" style="display:none;" class="svelte-1x1en8l" value="#3c64a0">
-        
-        
-        <button id="buttonEdit" class="svelte-1x1en8l">Preview</button>
-        
-</nav>
-<div id="main" class="svelte-1s847ju"><textarea id="inputArea" class=" svelte-ryp01x"># Full Name
-image:https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-born:
-email:
-phone:
-website:
-
-# Timeline
-
-## Experience
-
-### Position
-date
-Company Name, address
-description/responsibilities
-
-
-### Position
-date
-Company Name, address
-description/responsibilities
-
-
-## Experience 2
-
-### Position
-date
-Company Name, address
-description/responsibilities
-
-## Education
-
-### Position
-date
-Company Name, address
-description/responsibilities
-
-
-# Other
-
-## Skills
--skill one 80%
--skill two 65%
-
-## Languages
--first language - native
--second language - proficient
--third - hobbyist
-
-## Hobby
--Author, Book title
--Country visited
--Game genre
--Some nice info about you to start the chat
-
-# Footer
-Legal notice etc etc.</textarea>
-	<div id="page" style="--accent-color: #3c64a0;" class="svelte-1s847ju editorVisible">
-		<div id="info"><div class="profile-picture"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt=""></div>
-	<div contenteditable="false"><h1>Full Name</h1>
-		<p><!-- HTML_TAG_START -->born:<br>email:<br>phone:<br>website:<br><!-- HTML_TAG_END --></p></div>
-	</div>
-		
-		
-			<div id="timeline" contenteditable="false"><div class="timeline-part-title">Experience</div>
-		<div class="timeline-part"><div class="job"><div class="date">date</div>
-	<div class="job-info"><h2>Position</h2>
-		<div class="address">Company Name, address</div>
-		<div class="description">description/responsibilities</div></div></div>
-				<div class="job"><div class="date">date</div>
-	<div class="job-info"><h2>Position</h2>
-		<div class="address">Company Name, address</div>
-		<div class="description">description/responsibilities</div></div></div>
-				
-		</div><div class="timeline-part-title">Experience 2</div>
-		<div class="timeline-part"><div class="job"><div class="date">date</div>
-	<div class="job-info"><h2>Position</h2>
-		<div class="address">Company Name, address</div>
-		<div class="description">description/responsibilities</div></div></div>
-				
-		</div><div class="timeline-part-title">Education</div>
-		<div class="timeline-part"><div class="job"><div class="date">date</div>
-	<div class="job-info"><h2>Position</h2>
-		<div class="address">Company Name, address</div>
-		<div class="description">description/responsibilities</div></div></div>
-				
-		</div></div>
-		
-		
-			<div id="other" contenteditable="false"><div class="other"><h2>Skills</h2>
-			<p><!-- HTML_TAG_START --><ul><li class="skill"><p>skill one</p><div class="bar-full"><div class="bar" style="width:80%"><div/><div/><div/></div></div></li><li class="skill"><p>skill two</p><div class="bar-full"><div class="bar" style="width:65%"><div/><div/><div/></div></div></li><br><!-- HTML_TAG_END --></p>
-		</div><div class="other"><h2>Languages</h2>
-			<p><!-- HTML_TAG_START --><ul><li><p>first language - native</p></li><li><p>second language - proficient</p></li><li><p>third - hobbyist</p></li><br><!-- HTML_TAG_END --></p>
-		</div><div class="other"><h2>Hobby</h2>
-			<p><!-- HTML_TAG_START --><ul><li><p>Author, Book title</p></li><li><p>Country visited</p></li><li><p>Game genre</p></li><li><p>Some nice info about you to start the chat</p></li><!-- HTML_TAG_END --></p>
-		</div></div>
-		
-		<footer>Legal notice etc etc.</footer></div>
-</div>
-
-
-
-			
-		</div>
 </body>
-
 </html>

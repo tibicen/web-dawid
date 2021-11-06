@@ -213,15 +213,6 @@ a {
     border-radius: .3rem;
 }
 
-.skill {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 8.1rem 1fr;
-    align-items: center;
-    text-align: right;
-    grid-gap: .5rem;
-    margin-left: 0;
-}
 
 #other ul {
     text-align: left;
