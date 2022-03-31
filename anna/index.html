@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./favicon.png" sizes="32x32">
+    <title>Fashion</title>
     <style>
         * {
             margin: 0;
@@ -24,13 +25,15 @@
             width: 100vw;
             height: 100vh;
         }
-        nav {
+        section {
             position: fixed;
-            top: 2rem;
-            left: 2rem;
+            top: 40vh;
+            left: calc( 50vw - 18rem);
+            text-align: right;
         }
-        nav h1, nav p {
+        h1,  p {
             color: #555;
+            cursor: pointer;
         }
 
         h1 {
@@ -42,14 +45,29 @@
         p {
             font-weight: 300;
         }
+        nav {
+            position: fixed;
+            bottom: 3rem;
+            left: calc(50vw - 1rem);
+        }
+
+        @media only screen and (max-width: 600px) {
+            section {
+                top: 2rem;
+                left: calc( 50vw - 5rem);
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <h1>Anna Otton</h1>
-        <p>menu</p>
+    <section>
+        <h1>Anna<br>Otton</h1>
         <p>inne dane dot projektu</p>
+    </section>
+    <nav>
+        <p>menu</p>
     </nav>
     <script type="module" src="./js/main.js"></script>
     <div id="model"></div>
