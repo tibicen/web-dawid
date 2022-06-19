@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="./favicon.png" sizes="32x32">
+    <title>Fashion</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Jost', sans-serif;
+            /* font-family: 'Rubik', sans-serif; */
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+        #model {
+            width: 100vw;
+            height: 100vh;
+        }
+        section {
+            position: fixed;
+            top: 40vh;
+            left: calc( 50vw - 18rem);
+            text-align: right;
+        }
+        h1,  p {
+            color: #555;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 3rem;
+            text-transform: lowercase;
+            line-height: 3rem;
+        }
+        p {
+            font-weight: 300;
+        }
+        nav {
+            position: fixed;
+            bottom: 3rem;
+            left: calc(50vw - 1rem);
+        }
+
+        @media only screen and (max-width: 600px) {
+            section {
+                top: 2rem;
+                left: calc( 50vw - 5rem);
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Anna<br>Otton</h1>
+        <p>inne dane dot projektu</p>
+    </section>
+    <nav>
+        <p>menu</p>
+    </nav>
+    <script type="module" src="./js/main.js"></script>
+    <div id="model"></div>
+</body>
+
+</html>
