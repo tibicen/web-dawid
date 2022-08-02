@@ -84,3 +84,10 @@ grid-template-columns: 1fr 1fr 1fr;
     grid-gap:1rem; 
     text-align: left;
 }
+
+@media print {
+    h2, h3, p, a, li, footer {
+        color: black;
+        font-weight: 100;
+        }
+}
