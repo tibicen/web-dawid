@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<!-- Primary Meta Tags -->
+	<title>Dawid Huczyński</title>
+	<meta name="title" content="Dawid Huczyński">
+	<meta name="description" content="">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://dawid.huczynski.pl/">
+	<meta property="og:title" content="Dawid Huczyński">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://dawid.huczynski.pl/images/wh-social.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://dawid.huczynski.pl/">
+	<meta property="twitter:title" content="Dawid Huczyński">
+	<meta property="twitter:description" content="">
+	<meta property="twitter:image" content="https://dawid.huczynski.pl/images/wh-social.jpg">
+
+	<!-- Optional Additions for Consideration -->
+	<meta property="og:site_name" content="Dawid Huczyński">
+
+	<!-- <link rel="icon" href="../images/favicon.ico" sizes="any"> -->
+	<link rel="icon" href="../svg/logo-dh.svg" type="image/svg+xml">
+	<!-- <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"> -->
+	<link rel="manifest" href="../theme/manifest.webmanifest">
+	<meta name="theme-color" content="#92ac41" />
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">  -->
+	<!-- <link rel="stylesheet" href="leaflet.css" data-svelte="svelte-f6hidj"> -->
+
+	<!-- Statistics -->
+	<script async defer data-website-id="55055229-61bf-4885-99a6-985a9a75049b"
+		src="https://stats.huczynski.pl/umami.js"></script>
+
+
+	<script defer data-domain="dawid.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- <link href="../theme/css/prism-material-light.css" rel="stylesheet" /> -->
+	<link href="../theme/css/prism-gruvbox-dark.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../theme/css/global.css" media="screen">
+	<meta http-equiv="content-security-policy" content=""><title>
+		Revit project geolocation and data scraping - Dawid Huczyński
+	</title>
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/_slug_.svelte-87edf3d9.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Nav-2a4618eb.css">
+	<link rel="modulepreload" href="/_app/immutable/start-824f4808.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-e5ced12e.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-60cab3ee.js">
+	<link rel="modulepreload" href="/_app/immutable/layout.svelte-3ade32d3.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/_slug_.svelte-efbd894a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Nav-d64573cd.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/stores-300c42e8.js">
+</head>
+
+<body>
+	<div>
+
+
+
+
+<nav id="nav" class="svelte-jld698 top"><ul class="svelte-jld698"><li class="svelte-jld698"><a href="/#start" class="nav-link logo active svelte-jld698"><img alt="Logo" src="/svg/logo-dh.svg" class="svelte-jld698"></a></li>
+		<li class="svelte-jld698"><a href="/#portfolio" class="nav-link svelte-jld698"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 4.59C10.21 4.21 9.7 4 9.17 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-1.41-1.41z" /></svg><!-- HTML_TAG_END --></a></li>
+		<li class="svelte-jld698"><a href="/#about" class="nav-link svelte-jld698"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" /></svg><!-- HTML_TAG_END --></a></li>
+		<li class="svelte-jld698"><a href="/#contact" class="nav-link svelte-jld698"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z" /></svg><!-- HTML_TAG_END --></a></li>
+		<li class="svelte-jld698"><a href="/blog" class="nav-link svelte-jld698"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20.39 7.1023-3.4925-3.4925 1.146-1.146c0.30923-0.30923 0.69122-0.46385 1.146-0.46385 0.45475 0 0.83674 0.15462 1.146 0.46385l1.2005 1.2005c0.30923 0.30923 0.46385 0.69122 0.46385 1.146 0 0.45475-0.15462 0.83674-0.46385 1.146zm-1.146 1.146-13.752 13.752h-3.4925v-3.4925l13.752-13.752z" /></svg><!-- HTML_TAG_END --></a></li></ul>
+	<div class="submenu svelte-jld698 title"><a href="./" class="tt svelte-jld698">Blog</a></div>
+</nav>
+<section class="one-column blog-post svelte-1xpw61y"><header><h1 class="page-title">Revit project geolocation and data scraping</h1>
+		<div class="author svelte-1xpw61y"><img src="/images/dh.webp" alt="Author" class="round-img svelte-1xpw61y">
+			<p class="name svelte-1xpw61y">Dawid Huczyński</p>
+			<p class="svelte-1xpw61y">posted on 27 grudnia 2022</p></div>
+		<p class="svelte-1xpw61y">Revit automation for project startup. Geolocalization, point cloud parsing, site data imports and more..</p></header>
+	<h2>Wprowadzenie</h2>
+<p>W tym poście postaram się wam przybliżyć dane z jakimi możecie mieć styczność, możliwości ich przetwarzania i wykorzystania w projektowaniu budynków, budowli oraz ich analiz. Na koniec pokażę zarys jak można to zautomatyzować w Revicie i Blenderze.</p>
+<p>Ostatnimi czasy dane publiczne stają się coraz bardziej dostępne. Instytucje rządowe jak i amatorskie gromadzenie i analiza danych daje nam dostęp do niesamowitych zasobów.
+Wystarczy je przetworzyć by móc stworzyć warunki do projektowania niespotykane dotychczas w naszej branży, bez większych nakładów pracy.</p>
+<p>Pamiętam czasy gdy analizę słońca była robiona za pomocą specjalnej linijki nakładanej na rzut. Unormowana praktyka posiadająca niesamowitą ilość uproszczeń. Potem przeszliśmy na analizy słońca 3D, tworząc nasz projekt w trzecim wymiarze i modelując proste bryły sąsiadów. Niekoniecznie sprawdzaliśmy czy program w którym pracujemy bierze pod uwagę odchylenia względem przesunięć UTC, czy bierze pod uwagę wysokość nad poziomem morza, czy liczy uproszczenie płaszczyznowe, czy krzywizny ziemi… ale na to może będzie inny post.</p>
+<p>Powyższy przykład miał pokazać, jakie możliwości stoją przed nami i jak szczegółowo możemy wchodzić w analizy. Oczywiście, bardziej skomplikowane analizy wiążą się z czasem na wprowadzenie/wymodelowanie potrzebnych danych.</p>
+<h2>NMT, czyli Numeryczny Model Terenu, ale czy na pewno?</h2>
+<p><img src="/images/blog/001-dem-switzerland.webp" alt="DEM Switzerland"></p>
+<p>Jesteśmy na etapie,/kiedy większość danych geograficznych jest publicznie dostępna w internecie. Zaczęło się od DEM’ów (Digital Elevation Model). Zdjęć satelitarnych odzwierciedlających wysokości terenu. Kiedy zaczynałem się tym interesować były to skale dosyć trudne, ponieważ jeden pixel informacji pokrywał ok 30m2 terenu. Potem zeszło to do 10m2. Z takich informacji można było już wyciągać całkiem ciekawe uproszczenie terenu, bez dodatkowych opłat.
+Tutaj można dać przykład:</p>
+<ul><li>ALOS World 3D - 30m</li>
+<li>NASADEM Global Digital Elevation Model</li>
+<li>USGS 1/3 arc-second Digital Elevation Model - 10m szczegółowości
+W pewnym momencie zaczęły powstawać bazy danych, gdzie za pomocą zapytań można było pobierać wysokość nad poziomem morza. Takie strony jak:</li>
+<li><a href="https://www.opentopography.org/" rel="nofollow">https://www.opentopography.org/</a></li>
+<li><a href="https://open-elevation.com/" rel="nofollow">https://open-elevation.com/</a></li>
+<li>czy nawet api google maps z informacjami o wysokości terenu npm.</li></ul>
+<p>Obecnie DEM’y można spotkać nawet w szczegółowości co 1m. Pozytywnym przykładem może być udostępnione przez Polskę paczki wysokościowe pokrywające całe terytorium Polski z punktami rozstawionymi co 1m. DEM’y można podzielić na parę rodzajów:</p>
+<ul><li>raster</li>
+<li>grid</li></ul>
+<p>Pierwszy to np. obrazy .tiff gdzie odcień szarości definiuje wysokość. Ograniczeniem jest tu wymiar jednego pixela (np. 30m, 10m, 1m). Przetwarzanie takich danych wymaga np. darmowego oprogramowania jak <strong>QGIS</strong>. QGIS pozwala załadować takiego tiffa w odpowiednich koordynatach, przyciąć go do potrzebnych nam zakresów, a potem wygenerować z danych rastrowych np. poziomice, siatkę punktów. Grid to oczywiście plik np. plik tekstowy z listą liczb, które są definiują wysokość nad poziomem terenu na siatce co 1m.
+Żeby użyć tego np, w Revicie trzeba przekonwertować takie dane na plik csv z kolumnami X, Y, Z. To pozwoli nam zaimportować je jako toposurface.</p>
+<p>Ale czy to na pewno jest już granica szczegółowości? Oczywiście, że nie. 😉</p>
+<h2>Chmura punktów</h2>
+<p>Kolejnym poziomem szczegółowości w moim przekonaniu są surowe dane pomiarowe. Wcześniej były to rzesze geodetów i zaawansowane technologie triangulacji. Teraz też opiera się to o triangulację. Tylko ilość danych wzrosła wykładniczo. Mowa o chmurach punktów.
+Tutaj możemy sprawdzać dokładność z marginesem błędu do paru centymetrów, lub jak kto woli przy danych lidar z drona lotniczego to na przykładzie geoportalu, który mówi o szczegółowości od 4 punktów/m2 do aż 20 punktów /m2 w przypadku większych miast, przy średnim błędzie wysokości np. do 10cm.</p>
+<p>Tutaj znów podam przykład polskiego ministerstwa, które udostępnia dane pomiarowe (lidar) w formacie las.
+Chmura punktów to coś na kształt obrazka w 3 wymiarach. Zamiast pixeli mamy punkty w 3D. Każdy z punktów może mieć dodatkowe parametry jak:</p>
+<ul><li>kolor</li>
+<li>klasyfikację - czy jest to budynek, zieleń niska, wysoka, teren, samochód, lampa uliczna…</li>
+<li>dokładność - jak precyzyjny był pomiar tego punktu</li>
+<li>intensywność - intensywność odbicia wiązki lidar</li>
+<li>oraz wiele innych danych bezpośrednich</li>
+<li>dodatkowo dane pośrednie wynikające z analizy punktów i ich relacji względem siebie np.:<ul><li>czy punkty są na jednej płaszczyźnie - może być to ściana?</li>
+<li>czy punkty nie mają żadnej płaszczyzny a są w grupie - może to drzewo?</li></ul></li></ul>
+<p>To już jest olbrzymia ilość danych z której możemy korzystać. W geoportalu nazywa się to Dane Pomiarowe, ja będę używał uogólnienia, czyli chmura punktów.
+Chmury możemy podzielić, na przeróżny sposób i w różne grupy, ja skupię się na praktycznym podziale:</p>
+<ul><li>chmury punktów lidar</li>
+<li>chmury punktów fotogrametrii</li></ul>
+<p>oraz innym:</p>
+<ul><li>chmury punktów sklasyfikowane</li>
+<li>chmury punktów niesklasyfikowane</li></ul>
+<p>Na koniec można dodać, że chmury mogą też być:</p>
+<ul><li>zarejestrowane,</li>
+<li>niezarejestrowane.</li></ul>
+<p>Jeżeli słyszycie to pojęcie to głównie chodzi o ustawienie takiej chmury w konkretnych układach współrzędnych pionowych i poziomych, oraz wyczyszczenie i poprawienie ich z niedociągnięć i błędnych pomiarów. Czyli w uproszczeniu geolokalizacja.</p>
+<p>Polski geoportal najczęściej dostarcza nam w pełni scalone dane pomiarowe zawierające podstawowe potrzebne informacje:</p>
+<ul><li>geolokalizację</li>
+<li>kolor</li>
+<li>klasyfikację</li></ul>
+<p>Dzięki temu możemy łatwo i szybko dopracować taką chmurę do potrzeb projektowych.</p>
+<ul><li>Wyfiltrować wszystkie budynki i wrzucić je na osobną warstwę, do pomiarów sąsiadów</li>
+<li>Wyfiltrować teren i wygenerować z niego teren 3D (np. revitową toposurface)</li>
+<li>Wyfiltrować zieleń wysoką, przetworzyć dane i sprawdzić gdzie są wierzchołki drzew(co za tym idzie ich lokalizacja)</li>
+<li>Za pomocą darmowych narzędzi możemy wyfiltrować wszystkie punkty leżące w granicach naszej działki i usunąć z niej wszystko poza punktami terenu, resztę chmury zostawiając w spokoju.</li></ul>
+<p>Do tych zadań idealnie nadaje się narzędzie <strong>CloudCompare</strong>. Potrafi otwierać chmury punktów z zachowaniem układu odniesienia, czyścić, analizować i przetwarzać dane. Dodatkowo ma podstawowe możliwości klasyfikacji punktów. Z zalet tego programu, które przydają się w procesie projektowym wymieniłbym głównie:</p>
+<ul><li>możliwość klasyfikacji punktów terenu (jeżeli nie ma klasyfikacji)</li>
+<li>możliwość nakładania kolorów z zdjęć satelitarnych na chmurę punktów (jeżeli brakuje kolorów)</li>
+<li>rejestrację chmur punktów względem siebie</li></ul>
+<p>Takie ruchy pozwolą nam podzielić chmurę punktów na lekkie paczki, które można potem podlinkować w pliku Revitowym i mieć kontrolę nad widocznością wszystkiego. Tutaj niestety nie obejdzie się bez płatnego programu Autodesk Recap, który otwiera pliki <code>.las</code> i zapisuje je do formatu <code>.rcp</code>, który można podczytać w Revicie.</p>
+<p>Z tak załadowaną chmurą, możemy ją podczytać w odpowiednich koordynatach do naszego projektu i możemy być pewni, że punkty siedzą idealnie w terenie. Z praktyki mogę powiedzieć, że taka chmura świetnie się sprawdza na etapie koncepcji i projektowaniu w kontekście terenu z <strong>rzeczywistymi (!!!)</strong> obiektami terenu jak zieleń, cieki, budynki, drogi, wzniesienia, rzeźby (nie ma co wymieniać, bo to jest dosłownie wszystko). Przydaje się do uszczegóławiania i modelowania dachów budynków sąsiednich, lub sprawdzania rzeczywistej wysokości attyk i wysokości. Świetnie się sprawdza również w przypadku wizualizacji. Generowania rzeczywistego terenu i analizy wykopów mas ziemnych.</p>
+<h2>Granice działek</h2>
+<p>Różne kraje mają różne bazy dostępnych publicznie danych. Jako przykład można podać usługi</p>
+<ul><li>WMS (Web Map Service) WMTS (Web Map Tile Service),</li>
+<li>WFS (Web Feature Service),</li>
+<li>ATOM,</li>
+<li>INSPIRE (Infrastructure for Spatial Information in Europe).</li></ul>
+<p>Są to ujednolicone usługi udostępniania danych geograficznych jak ortofotomapy, granice, plany miejscowe i wiele innych.</p>
+<p>Polski Geoportal pozwala na pobranie bazy BDOT10k (Baza Danych Obiektów Topograficznych), z których za pomocą znanego nam QGIS możemy wyciągnąć np. granice działek, lub obrysy istniejących budynków, osie dróg oraz wiele innych informacji, jak punkty lokalizacji przystanków, rodzaje terenów etc. Takie dane możemy potem zaimportować do programów projektowych 2D lub 3D.</p>
+<p>QGIS pozwala nam to wizualnie wyfiltrować oraz ustawić w odpowiednich koordynatach.
+Tzw. Reprojection z ogólnopolskiego układu współrzędnych na układ, w którym projekt jest opracowywany. A o tym w następnym podpunkcie.
+Pod <a href="https://www.geoportal.gov.pl/uslugi/usluga-przegladania-wms" rel="nofollow">tym linkiem</a> widać jakie usługi są dostępne w ramach WMS geoportalu.pl</p>
+<h2>Geolokalizacja i numery EPSG</h2>
+<p><img src="/images/blog/001-poland-epsg.gif" alt="Map of Poland EPSG 3857" title="EPSG 3857">
+Od tego tematu powinniśmy zacząć, ale zawsze lepiej zacząć od czegoś bardziej efektownego. EPSG natomiast to element układanki, który połączy wszystko w całość. Znajomość tego pojęcia ułatwi nam pracę, wyeliminuje podstawowe błędy i przy prawie zerowym nakładzie pracy wprowadzi pierwszą automatyzację procesów.</p>
+<p>Kody EPSG powstały w celu standaryzacji nazewnictwa układów współrzędnych. W te kody wchodzą układy współrzędnych prostokątnych płaskich (rzutowania) jak i geograficznych.
+W polsce mamy dwa systemy układów odniesienia PL-ETRF2000 oraz aktualny <code>PL-ETRF89</code>.</p>
+<p>Układ współrzędnych płaskich prostokątnych PL-200 razem z numerami EPSG to:</p>
+<table><thead><tr><th>EPSG</th>
+<th>PL2000</th>
+<th>Południk</th></tr></thead>
+<tbody><tr><td>EPSG:2180</td>
+<td>PL2000</td>
+<td>cała polska</td></tr>
+<tr><td>EPSG:2176</td>
+<td>PL2000/5</td>
+<td>15</td></tr>
+<tr><td>EPSG:2177</td>
+<td>PL2000/6</td>
+<td>18</td></tr>
+<tr><td>EPSG:2178</td>
+<td>PL2000/7</td>
+<td>21</td></tr>
+<tr><td>EPSG:2179</td>
+<td>PL2000/8</td>
+<td>24</td></tr></tbody></table>
+<p>Wiedza o tym w jakim układzie znajduje się działka, lub w jakim układzie mamy dane pozwoli nam w bezproblemowy sposób scalić takie dane. Do analizy i przetwarzania takich danych też najlepiej sprawdzi się <strong>QGIS</strong>. Często zdarzy się, że chmura punktów dostarczana jest w układzie ogólnopolskim, a projekt ustawiony jest w koordynatach szczegółowych np. strefy 6.</p>
+<h2>Modele Budynków</h2>
+<p>W temacie budynków będziemy mieli parę opcji generowania modeli 3D.
+Pierwsza, łatwiejsza i czasochłonna opcja, to znalezienie istniejących modeli i ustawianie ich w 3D do granic budynków pozyskanych z usług WFS. Oczywiście jest to oczywista opcja, ale warto ją zawrzeć, bo czasem, można natknąć się na bardzo dokładne modele obiektów.</p>
+<p>Drugą opcją jest pozyskanie danych z geoportalu. Budynki można pobrać w formacie GML w szczegółowości LOD1. Aby móc je wykorzystać w revicie lub innym programie trzeba je przerobić na natywny format. Dla revita będzie to najlepiej <code>MASS FAMILY</code>. Dla blendera np. <code>OBJ</code>. Plik GML ma strukturę XML, więc możemy go odczytać w pythonie  za pomocą parser xml wyglądałoby to tak:</p>
+<pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token comment"># python</span>
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">from</span> xml<span class="token punctuation">.</span>etree <span class="token keyword">import</span> ElementTree <span class="token keyword">as</span> et
+
+FILEPATH <span class="token operator">=</span> <span class="token string">"file.gml"</span>
+
+
+<span class="token keyword">def</span> <span class="token function">unflatten</span><span class="token punctuation">(</span>coords<span class="token punctuation">,</span> s<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""gets numbers list
+    returns array of points (XYZ)"""</span>
+    verts <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span>coords<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> s<span class="token punctuation">,</span> coords<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> s<span class="token punctuation">,</span> coords<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">*</span> s<span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>coords<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> verts
+
+
+tree <span class="token operator">=</span> et<span class="token punctuation">.</span>parse<span class="token punctuation">(</span>FILEPATH<span class="token punctuation">)</span>
+polygons <span class="token operator">=</span> tree<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">".//&#123;http://www.opengis.net/gml&#125;Polygon"</span><span class="token punctuation">)</span>
+verts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+faces <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i<span class="token punctuation">,</span> p <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>polygons<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    poslist <span class="token operator">=</span> p<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">".//&#123;http://www.opengis.net/gml&#125;posList"</span><span class="token punctuation">)</span>
+    text <span class="token operator">=</span> poslist<span class="token punctuation">.</span>text
+    coords <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">float</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> text<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    points <span class="token operator">=</span> unflatten<span class="token punctuation">(</span>coords<span class="token punctuation">)</span>
+    start_idx <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>verts<span class="token punctuation">)</span>
+    end_idx <span class="token operator">=</span> start_idx <span class="token operator">+</span> <span class="token builtin">len</span><span class="token punctuation">(</span>points<span class="token punctuation">)</span>
+
+    verts<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>points<span class="token punctuation">)</span>
+    faces<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>start_idx<span class="token punctuation">,</span> end_idx<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code><!-- HTML_TAG_END --></pre>
+<p>Co dałoby nam zbiór wierzchołków i poligonów (grupy wierzchołków które tworzą pojedyncze poligony). Z takiego formatu bardzo łatwo już wygenerować obiekt w Blenderze, zapisać jako OBJ i zaimportować do Revita. Lub za pomocą Revit API automatycznie wymodelować obiekty MASS za pomocą tych danych. Plusem tego rozwiązania jest to, że takie budynki są już zlokalizowane w układzie poziomym i pionowym.</p>
+<hr>
+<blockquote><h3>Problem dalekich odległości<br></h3>
+<p>Pojawia się jeden problem dosyć znany w środowiskach grafików 3D. Im dalej wierzchołek jest położony od punktu [0,0,0] jego wyświetlanie się zaczyna być coraz bardziej “przybliżone”. Jest to problem radzenia sobie komputerów z liczbami po przecinku. Komputer zawsze uogólnia liczby po przecinku do swojej interpretacji dlatego czasami może się zdarzyć, że np. porównując liczby 0,003 == 0,003 okaże się, że są różne, ponieważ dla komputera 0,003 = 0,003000000000000001. Rozwiązaniem tego problemu byłoby pobranie informacji o lokalizacji <code>internal origin</code> lub <code>project base point</code> i przesunięcie wszystkich wierzchołków o dany wektor, aby wstawiały się nie poprzez <strong>shared coordinates</strong>, a poprzez bliższy punkt wstawienia.</p></blockquote>
+<hr>
+<p>Ostatnim rozwiązaniem jakie mógłbym zaproponować wymaga trochę więcej wiedzy technicznej, ale jest najdokładniejsze. Geometrię budynków moglibyśmy wygenerować z chmury punktów. Na pomoc przychodzi tutaj sporo algorytmów do analiz przestrzennych, ale w skrócie myślowym możemy to rozdzielić na poniższe zadania:</p>
+<ul><li>wydzielamy z chmury punktów punkty klasyfikowane jako budynki.</li>
+<li>analizujemy które punkty należą do jakich płaszczyzn i dzielimy je na grupy na jakich się te płaszczyzny znajdują</li>
+<li>mając płaszczyzny i punkty należące do płaszczyzn wyszukujemy punkty graniczne ( leżące na krawędziach każdej z grup). Dzięki temu mamy przybliżone krawędzie danego obiektu i płaszczyzny.</li>
+<li>czyścimy punkty które leżą na jednej prostej lub w jakiejś małej odległości od niej. Zostają nam wtedy wierzchołki</li>
+<li>łączymy wierzchołki które leżą blisko siebie nadajemy im numer i przypisujemy do płaszczyzn.</li>
+<li>finalny wynik daje nam te same zbiory wierzchołków i poligonów jak we wcześniejszym skrypcie.</li></ul>
+<p>Ta  opcja daje nam dużo bardziej szczegółowe budynki. Jeżeli brakuje nam szczegółowości, wówczas możemy użyć lidar, drona lub aparatu lub smartfonu, aby wygenerować dodatkowe chmury punktów za pomocą np. darmowego oprogramowania do fotogrametrii Meshroom [1]. Mając chmurę punktów możemy ją połączyć z chmurą dostarczoną z geoportalu, zagęszczając dokładność i uzupełniając braki. Takie połączenie chmury bez koordynatów z chmurą z koordynatami nazywamy rejestracją chmury. Łączy się to też z wyczyszczeniem takiej chmury z błędnych pomiarów. Dzięki temu możemy</p>
+<p>[1]: Meshroom - program do generowania chmury punktów ze zdjęć.</p>
+<p>[1]: Fotogrametria - dziedzina zajmująca się przetwarzaniem zdjęć z aparatów i smartfonów na chmurę punktów.</p>
+<h2>Zdjęcia satelitarne</h2>
+<p>Czy uwierzycie jeżeli wam powiem, że jest taki format zapisu obrazu, który pozwala na geolokalizację tego obrazu w koordynatach? Wyobraźcie sobie, że dostajecie mapę planu miejscowego / skan mapy do celów opiniodawczych od inwestora / zdjęcie satelitarne działki lub dowolną inną mapę. Wrzucacie ją do waszego programu i zawsze wkleja się idealnie we własciwe miejsce? Idealnie w skali? Bez żadnych zniekształceń?</p>
+<p>Tak jest to możliwe, nie zawsze, nie dla wszystkich programów, ale jest możliwy zapis geolokalizacji dla obrazu. Możemy to zrobić np. dla plików PDF, lub TIFF. Takie pliki tiff nazywamy wtedy GeoTiff.</p>
+<p>Kiedy pobieracie najcześciej zdjęcie satelitarne z portalu rządowego, to ma ono już ustawione swoje koordynaty i system w jakim został zapisany. Wrzucając takiego tiff’a np. do programu QGIS wystarczy mu ustawić w jakim układzie został zapisany (np. EPSG:2180) i od razu wkleja się we właściwe miejsce. Bez żadnych zniekształceń, bez przesunięć. Idealnie.</p>
+<p>Drugim atutem satelity są dane. Dla nas może być przydatny kolor. W przypadku chmury punktów, która nie ma zapisanych danych kolorystycznych możemy przełożyć kolory ze zdjęcia satelitarnego na daną chmurę punktów. Taką możliwość daje np. Cloud Compare.</p>
+<h2>Joining it together + Automation</h2>
+<p>Najciekawszym elementem tej układanki jest to, że większość tych zadań można skrócić do jednego przycisku np. w Revicie. Potrzebujemy wprowadzić tylko parę parametrów:</p>
+<ul><li>lokalizację (koordynaty)</li>
+<li>promień widoczności (w jakim zasięgu pobierać dane) </li>
+<li>opcjonalnie poligon/region z granicami działki</li></ul>
+</section>
+
+
+		<script type="module" data-sveltekit-hydrate="q7w0kx">
+		import { start } from "/_app/immutable/start-824f4808.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="q7w0kx"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 2],
+				params: {slug:"001-revit-project-startup"},
+				routeId: "blog/[slug]"
+			}
+		});
+	</script></div>
+	<hr>
+	<footer>
+		Copyright 2022, Dawid Huczyński<br>Made with <a href="https://kit.svelte.dev/" target="_blank"
+			rel="noopener noreferrer">SvelteKit</a>
+	</footer>
+</body>
+
+</html>
