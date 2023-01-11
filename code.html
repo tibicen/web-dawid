@@ -37,13 +37,6 @@
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">  -->
 	<!-- <link rel="stylesheet" href="leaflet.css" data-svelte="svelte-f6hidj"> -->
 
-	<!-- Statistics -->
-	<script async defer data-website-id="55055229-61bf-4885-99a6-985a9a75049b"
-		src="https://stats.huczynski.pl/umami.js"></script>
-
-
-	<script defer data-domain="dawid.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
-
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,15 +44,44 @@
 	<!-- <link href="./theme/css/prism-material-light.css" rel="stylesheet" /> -->
 	<link href="./theme/css/prism-gruvbox-dark.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="./theme/css/global.css" media="screen">
+
 	<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/code.svx-68e021be.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/Nav-2a4618eb.css">
-	<link rel="modulepreload" href="/_app/immutable/start-824f4808.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-e5ced12e.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-60cab3ee.js">
-	<link rel="modulepreload" href="/_app/immutable/layout.svelte-3ade32d3.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/code.svx-6f68d2a1.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/Nav-d64573cd.js">
+		<link href="./_app/immutable/assets/_page-5b442fce.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Nav-4ff2e076.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-6dfbbdd4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-5cf732b6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-ca1e47c6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-958a1762.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-0fbdd4d6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-dc735eee.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-480efb72.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/code/_page.svx-220d401a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Nav-cd4a338e.js">
+
+	<!-- Statistics -->
+	<!-- Umami -->
+	<script async defer data-website-id="55055229-61bf-4885-99a6-985a9a75049b"
+		src="https://stats.huczynski.pl/umami.js"></script>
+	<!-- Plausible -->
+	<script defer data-domain="dawid.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
+	<!-- Matomo -->
+	<script>
+		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function () {
+			var u = "//matomo.huczynski.pl/";
+			_paq.push(['setTrackerUrl', u + 'matomo.php']);
+			_paq.push(['setSiteId', '1']);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
+
 </head>
 
 <body>
@@ -119,26 +141,24 @@
 
 
 		<script type="module" data-sveltekit-hydrate="g90nvn">
-		import { start } from "/_app/immutable/start-824f4808.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="g90nvn"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 4],
-				params: {},
-				routeId: "code"
-			}
-		});
-	</script></div>
+			import { start } from "./_app/immutable/start-6dfbbdd4.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="g90nvn"]').parentNode,
+				version: "1673450164292",
+				hydrate: {
+					node_ids: [0, 6],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
 	<hr>
 	<footer>
-		Copyright 2022, Dawid Huczyński<br>Made with <a href="https://kit.svelte.dev/" target="_blank"
+		Copyright 2023, Dawid Huczyński<br>Made with <a href="https://kit.svelte.dev/" target="_blank"
 			rel="noopener noreferrer">SvelteKit</a>
 	</footer>
 </body>

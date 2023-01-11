@@ -37,13 +37,6 @@
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">  -->
 	<!-- <link rel="stylesheet" href="leaflet.css" data-svelte="svelte-f6hidj"> -->
 
-	<!-- Statistics -->
-	<script async defer data-website-id="55055229-61bf-4885-99a6-985a9a75049b"
-		src="https://stats.huczynski.pl/umami.js"></script>
-
-
-	<script defer data-domain="dawid.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
-
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,21 +44,50 @@
 	<!-- <link href="./theme/css/prism-material-light.css" rel="stylesheet" /> -->
 	<link href="./theme/css/prism-gruvbox-dark.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="./theme/css/global.css" media="screen">
+
 	<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/graphic.svelte-167cecd5.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/Grid.svelte_svelte_type_style_lang-c3b6de18.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/Image.svelte_svelte_type_style_lang-53c0ed13.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/Gallery.svelte_svelte_type_style_lang-5b75f02a.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/Nav-2a4618eb.css">
-	<link rel="modulepreload" href="/_app/immutable/start-824f4808.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-e5ced12e.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-60cab3ee.js">
-	<link rel="modulepreload" href="/_app/immutable/layout.svelte-3ade32d3.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/graphic.svelte-bf194106.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/Nav-d64573cd.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/Gallery-a0b92011.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/Grid-4fb5f73e.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/Image-239e924d.js">
+		<link href="./_app/immutable/assets/_page-3674aadf.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Nav-4ff2e076.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Gallery-46f452bf.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Grid-19b51f8b.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Image-3f43ee0d.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-6dfbbdd4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-5cf732b6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-ca1e47c6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-958a1762.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-0fbdd4d6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-dc735eee.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-480efb72.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/graphic/_page.svelte-3702cdd7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Nav-cd4a338e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Gallery-5c3f73f7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Grid-528a4930.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Image-e102a7de.js">
+
+	<!-- Statistics -->
+	<!-- Umami -->
+	<script async defer data-website-id="55055229-61bf-4885-99a6-985a9a75049b"
+		src="https://stats.huczynski.pl/umami.js"></script>
+	<!-- Plausible -->
+	<script defer data-domain="dawid.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
+	<!-- Matomo -->
+	<script>
+		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function () {
+			var u = "//matomo.huczynski.pl/";
+			_paq.push(['setTrackerUrl', u + 'matomo.php']);
+			_paq.push(['setSiteId', '1']);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
+
 </head>
 
 <body>
@@ -81,112 +103,110 @@
 </nav>
 <br class="svelte-ujw3q0">
 <section class="svelte-1ak9eck"><h2 class="svelte-1ak9eck titlecenter">Architectural Visualisation</h2>
-	<div class="grid svelte-hqr8ul"><a id="arch-1719-final-0003" href="#arch-1719-final-0003" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//arch-1719-final-0003.webp)" alt="" srcset=""></div></a>
+	<div class="grid svelte-hqr8ul kwadraty"><a id="arch-1719-final-0003" href="#arch-1719-final-0003" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/arch-1719-final-0003.webp)" alt="" srcset=""></div></a>
 
-				<a id="bf2-000" href="#bf2-000" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//bf2-000.webp)" alt="" srcset=""></div></a>
+				<a id="bf2-000" href="#bf2-000" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/bf2-000.webp)" alt="" srcset=""></div></a>
 
-				<a id="bf2-003" href="#bf2-003" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//bf2-003.webp)" alt="" srcset=""></div></a>
+				<a id="bf2-003" href="#bf2-003" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/bf2-003.webp)" alt="" srcset=""></div></a>
 
-				<a id="rewitalizacja-foyer" href="#rewitalizacja-foyer" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//rewitalizacja-foyer.webp)" alt="" srcset=""></div></a>
+				<a id="rewitalizacja-foyer" href="#rewitalizacja-foyer" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/rewitalizacja-foyer.webp)" alt="" srcset=""></div></a>
 
-				<a id="high-five-001" href="#high-five-001" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//high-five-001.webp)" alt="" srcset=""></div></a>
+				<a id="high-five-001" href="#high-five-001" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/high-five-001.webp)" alt="" srcset=""></div></a>
 
-				<a id="nafta-002" href="#nafta-002" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//nafta-002.webp)" alt="" srcset=""></div></a>
+				<a id="nafta-002" href="#nafta-002" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/nafta-002.webp)" alt="" srcset=""></div></a>
 
-				<a id="dabki-001" href="#dabki-001" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//dabki-001.webp)" alt="" srcset=""></div></a>
+				<a id="dabki-001" href="#dabki-001" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/dabki-001.webp)" alt="" srcset=""></div></a>
 
-				<a id="dabki-005" href="#dabki-005" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//dabki-005.webp)" alt="" srcset=""></div></a>
+				<a id="dabki-005" href="#dabki-005" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/dabki-005.webp)" alt="" srcset=""></div></a>
 
-				<a id="dabki-008" href="#dabki-008" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//dabki-008.webp)" alt="" srcset=""></div></a>
+				<a id="dabki-008" href="#dabki-008" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/dabki-008.webp)" alt="" srcset=""></div></a>
 
-				<a id="oawa1" href="#oawa1" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//oawa1.webp)" alt="" srcset=""></div></a>
+				<a id="oawa1" href="#oawa1" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/oawa1.webp)" alt="" srcset=""></div></a>
 
-				<a id="oawa4" href="#oawa4" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//oawa4.webp)" alt="" srcset=""></div></a>
+				<a id="oawa4" href="#oawa4" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/oawa4.webp)" alt="" srcset=""></div></a>
 
-				<a id="single-family-house-1" href="#single-family-house-1" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//single-family-house-1.webp)" alt="" srcset=""></div></a>
+				<a id="single-family-house-1" href="#single-family-house-1" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/single-family-house-1.webp)" alt="" srcset=""></div></a>
 
-				<a id="single-family-house-3" href="#single-family-house-3" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//single-family-house-3.webp)" alt="" srcset=""></div></a>
+				<a id="single-family-house-3" href="#single-family-house-3" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/single-family-house-3.webp)" alt="" srcset=""></div></a>
 
-				<a id="single-family-house-4" href="#single-family-house-4" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//single-family-house-4.webp)" alt="" srcset=""></div></a>
+				<a id="single-family-house-4" href="#single-family-house-4" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/single-family-house-4.webp)" alt="" srcset=""></div></a>
 
-				<a id="wabrzych0" href="#wabrzych0" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//wabrzych0.webp)" alt="" srcset=""></div></a>
+				<a id="wabrzych0" href="#wabrzych0" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/wabrzych0.webp)" alt="" srcset=""></div></a>
 
-				<a id="wabrzych3" href="#wabrzych3" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//wabrzych3.webp)" alt="" srcset=""></div></a>
+				<a id="wabrzych3" href="#wabrzych3" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/wabrzych3.webp)" alt="" srcset=""></div></a>
 
-				<a id="architecture" href="#architecture" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//architecture.webp)" alt="" srcset=""></div></a>
+				<a id="architecture" href="#architecture" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/architecture.webp)" alt="" srcset=""></div></a>
 
-				<a id="arch-1" href="#arch-1" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//arch-1.webp)" alt="" srcset=""></div></a>
+				<a id="arch-1" href="#arch-1" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/arch-1.webp)" alt="" srcset=""></div></a>
 
-				<a id="exterior-architecture" href="#exterior-architecture" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//exterior-architecture.webp)" alt="" srcset=""></div></a>
+				<a id="exterior-architecture" href="#exterior-architecture" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/exterior-architecture.webp)" alt="" srcset=""></div></a>
 
-				<a id="pers_wnetrze" href="#pers_wnetrze" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//pers_wnetrze.webp)" alt="" srcset=""></div></a>
+				<a id="pers_wnetrze" href="#pers_wnetrze" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/pers_wnetrze.webp)" alt="" srcset=""></div></a>
 
-				<a id="pers_wnetrze2" href="#pers_wnetrze2" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//pers_wnetrze2.webp)" alt="" srcset=""></div></a>
+				<a id="pers_wnetrze2" href="#pers_wnetrze2" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/pers_wnetrze2.webp)" alt="" srcset=""></div></a>
 
-				<a id="arch-jednorodzinka" href="#arch-jednorodzinka" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//arch-jednorodzinka.webp)" alt="" srcset=""></div></a>
+				<a id="arch-jednorodzinka" href="#arch-jednorodzinka" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/arch-jednorodzinka.webp)" alt="" srcset=""></div></a>
 
 				
 </div>
 </section><section class="svelte-1ak9eck"><h2 class="svelte-1ak9eck titlecenter">Nature</h2>
-	<div class="grid svelte-hqr8ul"><a id="mountain-forest_24227633940_o" href="#mountain-forest_24227633940_o" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//mountain-forest_24227633940_o.webp)" alt="" srcset=""></div></a>
+	<div class="grid svelte-hqr8ul kwadraty"><a id="mountain-forest_24227633940_o" href="#mountain-forest_24227633940_o" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/mountain-forest_24227633940_o.webp)" alt="" srcset=""></div></a>
 
-				<a id="environment-test" href="#environment-test" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//environment-test.webp)" alt="" srcset=""></div></a>
+				<a id="environment-test" href="#environment-test" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/environment-test.webp)" alt="" srcset=""></div></a>
 
-				<a id="environment-test2" href="#environment-test2" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//environment-test2.webp)" alt="" srcset=""></div></a>
+				<a id="environment-test2" href="#environment-test2" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/environment-test2.webp)" alt="" srcset=""></div></a>
 
-				<a id="grass-lightning-test" href="#grass-lightning-test" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//grass-lightning-test.webp)" alt="" srcset=""></div></a>
+				<a id="grass-lightning-test" href="#grass-lightning-test" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/grass-lightning-test.webp)" alt="" srcset=""></div></a>
 
 				
 </div>
 </section><section class="svelte-1ak9eck"><h2 class="svelte-1ak9eck titlecenter">Tests</h2>
-	<div class="grid svelte-hqr8ul"><a id="tests-003" href="#tests-003" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//tests-003.webp)" alt="" srcset=""></div></a>
+	<div class="grid svelte-hqr8ul kwadraty"><a id="tests-003" href="#tests-003" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/tests-003.webp)" alt="" srcset=""></div></a>
 
-				<a id="tests-004" href="#tests-004" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//tests-004.webp)" alt="" srcset=""></div></a>
+				<a id="tests-004" href="#tests-004" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/tests-004.webp)" alt="" srcset=""></div></a>
 
-				<a id="tests-005" href="#tests-005" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//tests-005.webp)" alt="" srcset=""></div></a>
+				<a id="tests-005" href="#tests-005" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/tests-005.webp)" alt="" srcset=""></div></a>
 
-				<a id="tests-001" href="#tests-001" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//tests-001.webp)" alt="" srcset=""></div></a>
+				<a id="tests-001" href="#tests-001" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/tests-001.webp)" alt="" srcset=""></div></a>
 
-				<a id="tests-002" href="#tests-002" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//tests-002.webp)" alt="" srcset=""></div></a>
+				<a id="tests-002" href="#tests-002" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/tests-002.webp)" alt="" srcset=""></div></a>
 
-				<a id="volumetrics-blender-1" href="#volumetrics-blender-1" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//volumetrics-blender-1.webp)" alt="" srcset=""></div></a>
+				<a id="volumetrics-blender-1" href="#volumetrics-blender-1" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/volumetrics-blender-1.webp)" alt="" srcset=""></div></a>
 
-				<a id="volumetrics-blender-2" href="#volumetrics-blender-2" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//volumetrics-blender-2.webp)" alt="" srcset=""></div></a>
+				<a id="volumetrics-blender-2" href="#volumetrics-blender-2" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/volumetrics-blender-2.webp)" alt="" srcset=""></div></a>
 
-				<a id="volumetrics-blender-3" href="#volumetrics-blender-3" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//volumetrics-blender-3.webp)" alt="" srcset=""></div></a>
+				<a id="volumetrics-blender-3" href="#volumetrics-blender-3" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/volumetrics-blender-3.webp)" alt="" srcset=""></div></a>
 
-				<a id="volumetrics-blender-axonometry-1" href="#volumetrics-blender-axonometry-1" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//volumetrics-blender-axonometry-1.webp)" alt="" srcset=""></div></a>
+				<a id="volumetrics-blender-axonometry-1" href="#volumetrics-blender-axonometry-1" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/volumetrics-blender-axonometry-1.webp)" alt="" srcset=""></div></a>
 
-				<a id="volumetrics-blender-axonometry-2" href="#volumetrics-blender-axonometry-2" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//volumetrics-blender-axonometry-2.webp)" alt="" srcset=""></div></a>
+				<a id="volumetrics-blender-axonometry-2" href="#volumetrics-blender-axonometry-2" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/volumetrics-blender-axonometry-2.webp)" alt="" srcset=""></div></a>
 
-				<a id="volumetrics-blender-axonometry-3" href="#volumetrics-blender-axonometry-3" class="card  svelte-6ljun1"><div class="image svelte-6ljun1" style="background-image:url(/images/graphic//volumetrics-blender-axonometry-3.webp)" alt="" srcset=""></div></a>
+				<a id="volumetrics-blender-axonometry-3" href="#volumetrics-blender-axonometry-3" class="card  svelte-y5u9nq"><div class="image svelte-y5u9nq" style="background-image:url(/images/graphic/volumetrics-blender-axonometry-3.webp)" alt="" srcset=""></div></a>
 
 				
 </div>
 </section>
 
 
-		<script type="module" data-sveltekit-hydrate="11ul3r4">
-		import { start } from "/_app/immutable/start-824f4808.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="11ul3r4"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 5],
-				params: {},
-				routeId: "graphic"
-			}
-		});
-	</script></div>
+		<script type="module" data-sveltekit-hydrate="105poaw">
+			import { start } from "./_app/immutable/start-6dfbbdd4.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="105poaw"]').parentNode,
+				version: "1673450164292",
+				hydrate: {
+					node_ids: [0, 7],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
 	<hr>
 	<footer>
-		Copyright 2022, Dawid Huczyński<br>Made with <a href="https://kit.svelte.dev/" target="_blank"
+		Copyright 2023, Dawid Huczyński<br>Made with <a href="https://kit.svelte.dev/" target="_blank"
 			rel="noopener noreferrer">SvelteKit</a>
 	</footer>
 </body>

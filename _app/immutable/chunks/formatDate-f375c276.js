@@ -1,0 +1,1 @@
+import{n as t}from"./stores-92482488.js";function r(e,a){var e=new Date(e);return a?e.toLocaleDateString(t.language,{month:"short",year:"numeric"}):e.toLocaleDateString(t.language,{month:"long",year:"numeric",day:"numeric"})}export{r as G};
