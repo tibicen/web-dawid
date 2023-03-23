@@ -51,15 +51,6 @@ Słodki mezalians google maps i geoportalu.
 
 ---
 # Layout
-![](https://lh3.googleusercontent.com/pw/AM-JKLUKCbDB2H4ht1zUhCE5qiDH6nSPGx2z4O2KjWZ_7D1LrcTifIj186xsnfseGeHKpXQi1Bym4PMYe7KMPMj78CWzgHrRyQg4HCp_qwv5kMHNrj_DlE-CDUf5pDDgliEY-kMBQQ0x3gRLkBQXrhSvAEpbAA=w1920-h898-no?authuser=0)
----
-# Dodatki
-- **Pobieracz danych GUGiK**
-- Usługa Lokalizacji Działek Katastralnych
-- Przechwyć wysokość GUGiK NMT
-- Oblicz Wysokość GUGiK NMT
-- Wtyczka APP - Pobieranie aktów Planowania Przestrzennego
-
 ---
 # Warstwy
 - rastrowe
@@ -75,9 +66,6 @@ Słodki mezalians google maps i geoportalu.
 - XYZ
 - WMS / WMTS
 - WFS
-
-Plik do załadowania warst rastrowych geoportalu:<br> 
-\`\`H:\\\\05_BIM STANDARD\\\\QGIS-GEOPORTAL.xml\`\`
 
 ---
 # Geoportal

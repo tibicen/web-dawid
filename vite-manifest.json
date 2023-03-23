@@ -1,7 +1,27 @@
 {
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-8c24f0c1.css",
+    "src": "src/routes/+page.css"
+  },
   "Nav.css": {
     "file": "_app/immutable/assets/Nav-4ff2e076.css",
     "src": "Nav.css"
+  },
+  "src/routes/blog/+page.css": {
+    "file": "_app/immutable/assets/_page-218a8ac1.css",
+    "src": "src/routes/blog/+page.css"
+  },
+  "src/routes/lectures/+page.css": {
+    "file": "_app/immutable/assets/_page-bea4cded.css",
+    "src": "src/routes/lectures/+page.css"
+  },
+  "src/routes/photography/+page.css": {
+    "file": "_app/immutable/assets/_page-3674aadf.css",
+    "src": "src/routes/photography/+page.css"
+  },
+  "src/routes/projects/[slug]/+page.css": {
+    "file": "_app/immutable/assets/_page-17f2bca3.css",
+    "src": "src/routes/projects/[slug]/+page.css"
   },
   "Card.css": {
     "file": "_app/immutable/assets/Card-90472076.css",
@@ -11,41 +31,9 @@
     "file": "_app/immutable/assets/Gallery-46f452bf.css",
     "src": "Gallery.css"
   },
-  "src/routes/lectures/+page.css": {
-    "file": "_app/immutable/assets/_page-bea4cded.css",
-    "src": "src/routes/lectures/+page.css"
-  },
-  "Grid.css": {
-    "file": "_app/immutable/assets/Grid-19b51f8b.css",
-    "src": "Grid.css"
-  },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-8c24f0c1.css",
-    "src": "src/routes/+page.css"
-  },
-  "src/routes/blog/+page.css": {
-    "file": "_app/immutable/assets/_page-218a8ac1.css",
-    "src": "src/routes/blog/+page.css"
-  },
-  "src/routes/photography/+page.css": {
-    "file": "_app/immutable/assets/_page-3674aadf.css",
-    "src": "src/routes/photography/+page.css"
-  },
-  "src/routes/blog/[slug]/+page.css": {
-    "file": "_app/immutable/assets/_page-d7be49ec.css",
-    "src": "src/routes/blog/[slug]/+page.css"
-  },
-  "Image.css": {
-    "file": "_app/immutable/assets/Image-3f43ee0d.css",
-    "src": "Image.css"
-  },
   "src/routes/projects/+page.css": {
     "file": "_app/immutable/assets/_page-e9c73af1.css",
     "src": "src/routes/projects/+page.css"
-  },
-  "src/routes/projects/[slug]/+page.css": {
-    "file": "_app/immutable/assets/_page-17f2bca3.css",
-    "src": "src/routes/projects/[slug]/+page.css"
   },
   "src/routes/lectures/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-37769e9d.css",
@@ -59,6 +47,164 @@
     "file": "_app/immutable/assets/_page-9953be98.css",
     "src": "src/routes/motion-picture/+page.css"
   },
+  "src/routes/blog/[slug]/+page.css": {
+    "file": "_app/immutable/assets/_page-d7be49ec.css",
+    "src": "src/routes/blog/[slug]/+page.css"
+  },
+  "Grid.css": {
+    "file": "_app/immutable/assets/Grid-19b51f8b.css",
+    "src": "Grid.css"
+  },
+  "Image.css": {
+    "file": "_app/immutable/assets/Image-3f43ee0d.css",
+    "src": "Image.css"
+  },
+  "_index-dc735eee.js": {
+    "file": "_app/immutable/chunks/index-dc735eee.js",
+    "imports": [
+      "_control-f5b05b5f.js"
+    ]
+  },
+  "_dynamic-import-helper-be004503.js": {
+    "file": "_app/immutable/chunks/dynamic-import-helper-be004503.js"
+  },
+  "_Card-3455c28c.js": {
+    "file": "_app/immutable/chunks/Card-3455c28c.js",
+    "imports": [
+      "_index-5cf732b6.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Card-90472076.css"
+    ]
+  },
+  "__page-50c75215.js": {
+    "file": "_app/immutable/chunks/_page-50c75215.js",
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "_dynamic-import-helper-be004503.js",
+      "_index-dc735eee.js"
+    ],
+    "dynamicImports": [
+      "_001-revit-project-startup-b0279d60.js",
+      "_002-dwg2rvt-f7dc55a7.js",
+      "_003-point-clouds-in-architecture-27c11cd0.js",
+      "_004-ifc-analysis-openifcshell-0350c471.js",
+      "_test-75b4ef36.js"
+    ]
+  },
+  "_002-dwg2rvt-f7dc55a7.js": {
+    "file": "_app/immutable/chunks/002-dwg2rvt-f7dc55a7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "_control-f5b05b5f.js": {
+    "file": "_app/immutable/chunks/control-f5b05b5f.js"
+  },
+  "_Grid-528a4930.js": {
+    "file": "_app/immutable/chunks/Grid-528a4930.js",
+    "imports": [
+      "_index-5cf732b6.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Grid-19b51f8b.css"
+    ]
+  },
+  "src/routes/lectures/+page.svelte": {
+    "file": "_app/immutable/components/pages/lectures/_page.svelte-010d7c26.js",
+    "src": "src/routes/lectures/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-bea4cded.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-5ba4e9fe.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/photography/+page.svelte"
+    ]
+  },
+  "src/routes/blog/+page.svelte": {
+    "file": "_app/immutable/components/pages/blog/_page.svelte-a36b0cc9.js",
+    "src": "src/routes/blog/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Nav-cd4a338e.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-218a8ac1.css"
+    ]
+  },
+  "_Gallery-5c3f73f7.js": {
+    "file": "_app/immutable/chunks/Gallery-5c3f73f7.js",
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Grid-528a4930.js",
+      "_Image-e102a7de.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Gallery-46f452bf.css"
+    ]
+  },
+  "_formatDate-f375c276.js": {
+    "file": "_app/immutable/chunks/formatDate-f375c276.js",
+    "imports": [
+      "_stores-92482488.js"
+    ]
+  },
+  "src/routes/projects/[slug]/+page.js": {
+    "file": "_app/immutable/modules/pages/projects/_slug_/_page.js-f3ba9883.js",
+    "src": "src/routes/projects/[slug]/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "_dynamic-import-helper-be004503.js",
+      "_index-dc735eee.js",
+      "_formatDate-f375c276.js",
+      "__page-19dbf08b.js"
+    ]
+  },
+  "_004-ifc-analysis-openifcshell-0350c471.js": {
+    "file": "_app/immutable/chunks/004-ifc-analysis-openifcshell-0350c471.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-c620da87.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/code/+page.svx"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-58efb84d.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/graphic/+page.svelte"
+    ]
+  },
+  "__layout-cbc6a3fd.js": {
+    "file": "_app/immutable/chunks/_layout-cbc6a3fd.js",
+    "imports": [
+      "_index-dc735eee.js"
+    ]
+  },
+  "src/lib/lectures/qgis.md?raw": {
+    "file": "_app/immutable/chunks/qgis-08c76abe.js",
+    "src": "src/lib/lectures/qgis.md?raw",
+    "isDynamicEntry": true
+  },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "_app/immutable/components/error.svelte-a3eb12c5.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
@@ -68,11 +214,226 @@
       "_stores-92482488.js"
     ]
   },
+  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "_app/immutable/components/layout.svelte-958a1762.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/lib/projects/football-namibia.md": {
+    "file": "_app/immutable/chunks/football-namibia-5be32519.js",
+    "src": "src/lib/projects/football-namibia.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/lib/lectures/szkolenie-blender.md?raw": {
+    "file": "_app/immutable/chunks/szkolenie-blender-49f1acbf.js",
+    "src": "src/lib/lectures/szkolenie-blender.md?raw",
+    "isDynamicEntry": true
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-6721b2ab.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-ed77219c.js",
+      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
+    ]
+  },
+  "src/lib/projects/sky-tower.md": {
+    "file": "_app/immutable/chunks/sky-tower-dd31eb17.js",
+    "src": "src/lib/projects/sky-tower.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/lib/projects/kamienskiego-residential.md": {
+    "file": "_app/immutable/chunks/kamienskiego-residential-0612fc7f.js",
+    "src": "src/lib/projects/kamienskiego-residential.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
   "_preload-helper-41c905a7.js": {
     "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
   },
-  "_singletons-ca1e47c6.js": {
-    "file": "_app/immutable/chunks/singletons-ca1e47c6.js",
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-9757d8e9.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-290f38fd.js",
+      "src/routes/blog/+page.svelte"
+    ]
+  },
+  "_003-point-clouds-in-architecture-27c11cd0.js": {
+    "file": "_app/immutable/chunks/003-point-clouds-in-architecture-27c11cd0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/routes/graphic/+page.svelte": {
+    "file": "_app/immutable/components/pages/graphic/_page.svelte-3702cdd7.js",
+    "src": "src/routes/graphic/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Nav-cd4a338e.js",
+      "_Gallery-5c3f73f7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-3674aadf.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/13.js": {
+    "file": "_app/immutable/chunks/13-33abf961.js",
+    "src": ".svelte-kit/generated/nodes/13.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-19dbf08b.js",
+      "src/routes/projects/[slug]/+page.svelte"
+    ]
+  },
+  "src/lib/projects/bf2.md": {
+    "file": "_app/immutable/chunks/bf2-333152ea.js",
+    "src": "src/lib/projects/bf2.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-463cd88a.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  "src/lib/projects/traugutta-residential.md": {
+    "file": "_app/immutable/chunks/traugutta-residential-5c29a2b6.js",
+    "src": "src/lib/projects/traugutta-residential.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/routes/blog/[slug]/+layout.js": {
+    "file": "_app/immutable/modules/pages/blog/_slug_/_layout.js-4ed993c7.js",
+    "src": "src/routes/blog/[slug]/+layout.js",
+    "isEntry": true
+  },
+  "src/routes/projects/+page.svelte": {
+    "file": "_app/immutable/components/pages/projects/_page.svelte-8463a792.js",
+    "src": "src/routes/projects/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Nav-cd4a338e.js",
+      "_Card-3455c28c.js",
+      "_Grid-528a4930.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-e9c73af1.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-85e57afc.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-50c75215.js",
+      "src/routes/blog/[slug]/+page.svelte"
+    ]
+  },
+  "_test-75b4ef36.js": {
+    "file": "_app/immutable/chunks/test-75b4ef36.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "_Nav-cd4a338e.js": {
+    "file": "_app/immutable/chunks/Nav-cd4a338e.js",
+    "imports": [
+      "_index-5cf732b6.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Nav-4ff2e076.css"
+    ]
+  },
+  "src/lib/projects/dabki.md": {
+    "file": "_app/immutable/chunks/dabki-a3805fc3.js",
+    "src": "src/lib/projects/dabki.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/routes/sketchbook/+page.svelte": {
+    "file": "_app/immutable/components/pages/sketchbook/_page.svelte-722492c4.js",
+    "src": "src/routes/sketchbook/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Nav-cd4a338e.js",
+      "_Gallery-5c3f73f7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-3674aadf.css"
+    ]
+  },
+  "src/lib/projects/ark.md": {
+    "file": "_app/immutable/chunks/ark-383a0580.js",
+    "src": "src/lib/projects/ark.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/12.js": {
+    "file": "_app/immutable/chunks/12-12698173.js",
+    "src": ".svelte-kit/generated/nodes/12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/projects/+page.svelte"
+    ]
+  },
+  "src/routes/projects/[slug]/+page.svelte": {
+    "file": "_app/immutable/components/pages/projects/_slug_/_page.svelte-4adffe95.js",
+    "src": "src/routes/projects/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Nav-cd4a338e.js",
+      "_Grid-528a4930.js",
+      "_Image-e102a7de.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-17f2bca3.css",
+      "_app/immutable/assets/Card-90472076.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/9.js": {
+    "file": "_app/immutable/chunks/9-26ea9fec.js",
+    "src": ".svelte-kit/generated/nodes/9.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-c455a45e.js",
+      "src/routes/lectures/[slug]/+page.svelte"
+    ]
+  },
+  "src/lib/projects/zajezdnia.md": {
+    "file": "_app/immutable/chunks/zajezdnia-194f7983.js",
+    "src": "src/lib/projects/zajezdnia.md",
+    "isDynamicEntry": true,
     "imports": [
       "_index-5cf732b6.js"
     ]
@@ -89,81 +450,23 @@
       "_formatDate-f375c276.js"
     ]
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
-    "file": "_app/immutable/components/layout.svelte-958a1762.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+  "src/routes/+layout.js": {
+    "file": "_app/immutable/modules/pages/_layout.js-eb00e147.js",
+    "src": "src/routes/+layout.js",
     "isEntry": true,
     "imports": [
-      "_index-5cf732b6.js"
+      "_index-dc735eee.js",
+      "__layout-cbc6a3fd.js"
     ]
   },
-  "__layout-ed77219c.js": {
-    "file": "_app/immutable/chunks/_layout-ed77219c.js"
-  },
-  "_stores-92482488.js": {
-    "file": "_app/immutable/chunks/stores-92482488.js",
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-6549f13f.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-5cf732b6.js",
-      "_singletons-ca1e47c6.js"
+      "__layout-cbc6a3fd.js",
+      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
     ]
-  },
-  "_control-f5b05b5f.js": {
-    "file": "_app/immutable/chunks/control-f5b05b5f.js"
-  },
-  "_index-dc735eee.js": {
-    "file": "_app/immutable/chunks/index-dc735eee.js",
-    "imports": [
-      "_control-f5b05b5f.js"
-    ]
-  },
-  "_Card-3455c28c.js": {
-    "file": "_app/immutable/chunks/Card-3455c28c.js",
-    "imports": [
-      "_index-5cf732b6.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Card-90472076.css"
-    ]
-  },
-  "__layout-cbc6a3fd.js": {
-    "file": "_app/immutable/chunks/_layout-cbc6a3fd.js",
-    "imports": [
-      "_index-dc735eee.js"
-    ]
-  },
-  "_index-5cf732b6.js": {
-    "file": "_app/immutable/chunks/index-5cf732b6.js"
-  },
-  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-e2297e21.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_singletons-ca1e47c6.js",
-      "_preload-helper-41c905a7.js",
-      "_control-f5b05b5f.js"
-    ],
-    "dynamicImports": [
-      ".svelte-kit/generated/nodes/0.js",
-      ".svelte-kit/generated/nodes/1.js",
-      ".svelte-kit/generated/nodes/2.js",
-      ".svelte-kit/generated/nodes/3.js",
-      ".svelte-kit/generated/nodes/4.js",
-      ".svelte-kit/generated/nodes/5.js",
-      ".svelte-kit/generated/nodes/6.js",
-      ".svelte-kit/generated/nodes/7.js",
-      ".svelte-kit/generated/nodes/8.js",
-      ".svelte-kit/generated/nodes/9.js",
-      ".svelte-kit/generated/nodes/10.js",
-      ".svelte-kit/generated/nodes/11.js",
-      ".svelte-kit/generated/nodes/12.js",
-      ".svelte-kit/generated/nodes/13.js",
-      ".svelte-kit/generated/nodes/14.js"
-    ]
-  },
-  "_dynamic-import-helper-be004503.js": {
-    "file": "_app/immutable/chunks/dynamic-import-helper-be004503.js"
   },
   ".svelte-kit/generated/nodes/8.js": {
     "file": "_app/immutable/chunks/8-1bea3692.js",
@@ -173,18 +476,105 @@
       "src/routes/lectures/+page.svelte"
     ]
   },
-  "_Grid-528a4930.js": {
-    "file": "_app/immutable/chunks/Grid-528a4930.js",
+  "src/lib/projects/mlyn.md": {
+    "file": "_app/immutable/chunks/mlyn-33a8e1ab.js",
+    "src": "src/lib/projects/mlyn.md",
+    "isDynamicEntry": true,
     "imports": [
       "_index-5cf732b6.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Grid-19b51f8b.css"
     ]
   },
-  "src/lib/projects/kamienskiego-residential.md": {
-    "file": "_app/immutable/chunks/kamienskiego-residential-0612fc7f.js",
-    "src": "src/lib/projects/kamienskiego-residential.md",
+  "_stores-92482488.js": {
+    "file": "_app/immutable/chunks/stores-92482488.js",
+    "imports": [
+      "_index-5cf732b6.js",
+      "_singletons-ca1e47c6.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-2f9cec31.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  "src/routes/lectures/[slug]/+page.svelte": {
+    "file": "_app/immutable/components/pages/lectures/_slug_/_page.svelte-688eb02c.js",
+    "src": "src/routes/lectures/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_Nav-cd4a338e.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-37769e9d.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/14.js": {
+    "file": "_app/immutable/chunks/14-dde859d3.js",
+    "src": ".svelte-kit/generated/nodes/14.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/sketchbook/+page.svelte"
+    ]
+  },
+  "src/lib/lectures/open-source-in-architecture.md?raw": {
+    "file": "_app/immutable/chunks/open-source-in-architecture-81861c5a.js",
+    "src": "src/lib/lectures/open-source-in-architecture.md?raw",
+    "isDynamicEntry": true
+  },
+  ".svelte-kit/generated/nodes/10.js": {
+    "file": "_app/immutable/chunks/10-b39391ed.js",
+    "src": ".svelte-kit/generated/nodes/10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/motion-picture/+page.svelte"
+    ]
+  },
+  "src/routes/lectures/[slug]/+page.js": {
+    "file": "_app/immutable/modules/pages/lectures/_slug_/_page.js-72c88d67.js",
+    "src": "src/routes/lectures/[slug]/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "_dynamic-import-helper-be004503.js",
+      "_index-dc735eee.js",
+      "__page-c455a45e.js"
+    ]
+  },
+  "__layout-ed77219c.js": {
+    "file": "_app/immutable/chunks/_layout-ed77219c.js"
+  },
+  "src/routes/blog/+page.js": {
+    "file": "_app/immutable/modules/pages/blog/_page.js-857c6e87.js",
+    "src": "src/routes/blog/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_001-revit-project-startup-b0279d60.js",
+      "_002-dwg2rvt-f7dc55a7.js",
+      "_003-point-clouds-in-architecture-27c11cd0.js",
+      "_004-ifc-analysis-openifcshell-0350c471.js",
+      "_test-75b4ef36.js",
+      "_index-dc735eee.js",
+      "_formatDate-f375c276.js",
+      "__page-290f38fd.js"
+    ]
+  },
+  "src/routes/blog/[slug]/+page.js": {
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.js-11ed9821.js",
+    "src": "src/routes/blog/[slug]/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "_dynamic-import-helper-be004503.js",
+      "_index-dc735eee.js",
+      "__page-50c75215.js"
+    ]
+  },
+  "src/lib/projects/library-details.md": {
+    "file": "_app/immutable/chunks/library-details-4239af93.js",
+    "src": "src/lib/projects/library-details.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-5cf732b6.js"
@@ -213,396 +603,12 @@
       "src/lib/projects/zajezdnia.md"
     ]
   },
-  ".svelte-kit/generated/nodes/14.js": {
-    "file": "_app/immutable/chunks/14-dde859d3.js",
-    "src": ".svelte-kit/generated/nodes/14.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/sketchbook/+page.svelte"
-    ]
-  },
-  "src/routes/projects/[slug]/+page.js": {
-    "file": "_app/immutable/modules/pages/projects/_slug_/_page.js-f3ba9883.js",
-    "src": "src/routes/projects/[slug]/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_preload-helper-41c905a7.js",
-      "_dynamic-import-helper-be004503.js",
-      "_index-dc735eee.js",
-      "_formatDate-f375c276.js",
-      "__page-19dbf08b.js"
-    ]
-  },
-  "src/lib/projects/nafta-neo-bistro.md": {
-    "file": "_app/immutable/chunks/nafta-neo-bistro-01bbc464.js",
-    "src": "src/lib/projects/nafta-neo-bistro.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/lib/projects/dabki.md": {
-    "file": "_app/immutable/chunks/dabki-a3805fc3.js",
-    "src": "src/lib/projects/dabki.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/9.js": {
-    "file": "_app/immutable/chunks/9-2d419611.js",
-    "src": ".svelte-kit/generated/nodes/9.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-1056fc93.js",
-      "src/routes/lectures/[slug]/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-12698173.js",
-    "src": ".svelte-kit/generated/nodes/12.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/projects/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-5ba4e9fe.js",
-    "src": ".svelte-kit/generated/nodes/11.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/photography/+page.svelte"
-    ]
-  },
-  "src/lib/projects/mlyn.md": {
-    "file": "_app/immutable/chunks/mlyn-33a8e1ab.js",
-    "src": "src/lib/projects/mlyn.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
   "src/lib/projects/high-five.md": {
     "file": "_app/immutable/chunks/high-five-7c8e3871.js",
     "src": "src/lib/projects/high-five.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-5cf732b6.js"
-    ]
-  },
-  "src/lib/projects/sky-tower.md": {
-    "file": "_app/immutable/chunks/sky-tower-dd31eb17.js",
-    "src": "src/lib/projects/sky-tower.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-463cd88a.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  "__page-50c75215.js": {
-    "file": "_app/immutable/chunks/_page-50c75215.js",
-    "imports": [
-      "_preload-helper-41c905a7.js",
-      "_dynamic-import-helper-be004503.js",
-      "_index-dc735eee.js"
-    ],
-    "dynamicImports": [
-      "_001-revit-project-startup-b0279d60.js",
-      "_002-dwg2rvt-f7dc55a7.js",
-      "_003-point-clouds-in-architecture-27c11cd0.js",
-      "_004-ifc-analysis-openifcshell-0350c471.js",
-      "_test-75b4ef36.js"
-    ]
-  },
-  "src/lib/lectures/szkolenie-blender.md?raw": {
-    "file": "_app/immutable/chunks/szkolenie-blender-49f1acbf.js",
-    "src": "src/lib/lectures/szkolenie-blender.md?raw",
-    "isDynamicEntry": true
-  },
-  "src/lib/lectures/open-source-in-architecture.md?raw": {
-    "file": "_app/immutable/chunks/open-source-in-architecture-81861c5a.js",
-    "src": "src/lib/lectures/open-source-in-architecture.md?raw",
-    "isDynamicEntry": true
-  },
-  ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-b39391ed.js",
-    "src": ".svelte-kit/generated/nodes/10.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/motion-picture/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-33abf961.js",
-    "src": ".svelte-kit/generated/nodes/13.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-19dbf08b.js",
-      "src/routes/projects/[slug]/+page.svelte"
-    ]
-  },
-  "_test-75b4ef36.js": {
-    "file": "_app/immutable/chunks/test-75b4ef36.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/routes/blog/+page.js": {
-    "file": "_app/immutable/modules/pages/blog/_page.js-857c6e87.js",
-    "src": "src/routes/blog/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_001-revit-project-startup-b0279d60.js",
-      "_002-dwg2rvt-f7dc55a7.js",
-      "_003-point-clouds-in-architecture-27c11cd0.js",
-      "_004-ifc-analysis-openifcshell-0350c471.js",
-      "_test-75b4ef36.js",
-      "_index-dc735eee.js",
-      "_formatDate-f375c276.js",
-      "__page-290f38fd.js"
-    ]
-  },
-  "src/routes/+layout.js": {
-    "file": "_app/immutable/modules/pages/_layout.js-eb00e147.js",
-    "src": "src/routes/+layout.js",
-    "isEntry": true,
-    "imports": [
-      "_index-dc735eee.js",
-      "__layout-cbc6a3fd.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-58efb84d.js",
-    "src": ".svelte-kit/generated/nodes/7.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/graphic/+page.svelte"
-    ]
-  },
-  "src/routes/blog/[slug]/+layout.js": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_layout.js-4ed993c7.js",
-    "src": "src/routes/blog/[slug]/+layout.js",
-    "isEntry": true
-  },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-6549f13f.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__layout-cbc6a3fd.js",
-      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-c620da87.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/code/+page.svx"
-    ]
-  },
-  "src/lib/lectures/qgis.md?raw": {
-    "file": "_app/immutable/chunks/qgis-f7655623.js",
-    "src": "src/lib/lectures/qgis.md?raw",
-    "isDynamicEntry": true
-  },
-  ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-2f9cec31.js",
-    "src": ".svelte-kit/generated/nodes/3.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+page.svelte"
-    ]
-  },
-  "src/routes/projects/[slug]/+page.svelte": {
-    "file": "_app/immutable/components/pages/projects/_slug_/_page.svelte-4adffe95.js",
-    "src": "src/routes/projects/[slug]/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_Nav-cd4a338e.js",
-      "_Grid-528a4930.js",
-      "_Image-e102a7de.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-17f2bca3.css",
-      "_app/immutable/assets/Card-90472076.css"
-    ]
-  },
-  "src/lib/projects/traugutta-residential.md": {
-    "file": "_app/immutable/chunks/traugutta-residential-5c29a2b6.js",
-    "src": "src/lib/projects/traugutta-residential.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-9757d8e9.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-290f38fd.js",
-      "src/routes/blog/+page.svelte"
-    ]
-  },
-  "src/routes/lectures/[slug]/+page.js": {
-    "file": "_app/immutable/modules/pages/lectures/_slug_/_page.js-02a1e198.js",
-    "src": "src/routes/lectures/[slug]/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_preload-helper-41c905a7.js",
-      "_dynamic-import-helper-be004503.js",
-      "_index-dc735eee.js",
-      "__page-1056fc93.js"
-    ]
-  },
-  "_Image-e102a7de.js": {
-    "file": "_app/immutable/chunks/Image-e102a7de.js",
-    "imports": [
-      "_index-5cf732b6.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Image-3f43ee0d.css"
-    ]
-  },
-  ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-85e57afc.js",
-    "src": ".svelte-kit/generated/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-50c75215.js",
-      "src/routes/blog/[slug]/+page.svelte"
-    ]
-  },
-  "src/lib/projects/ark.md": {
-    "file": "_app/immutable/chunks/ark-383a0580.js",
-    "src": "src/lib/projects/ark.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/lib/projects/zajezdnia.md": {
-    "file": "_app/immutable/chunks/zajezdnia-194f7983.js",
-    "src": "src/lib/projects/zajezdnia.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/lib/projects/football-namibia.md": {
-    "file": "_app/immutable/chunks/football-namibia-5be32519.js",
-    "src": "src/lib/projects/football-namibia.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "_formatDate-f375c276.js": {
-    "file": "_app/immutable/chunks/formatDate-f375c276.js",
-    "imports": [
-      "_stores-92482488.js"
-    ]
-  },
-  "src/lib/projects/library-details.md": {
-    "file": "_app/immutable/chunks/library-details-4239af93.js",
-    "src": "src/lib/projects/library-details.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/routes/lectures/+page.svelte": {
-    "file": "_app/immutable/components/pages/lectures/_page.svelte-010d7c26.js",
-    "src": "src/routes/lectures/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-bea4cded.css"
-    ]
-  },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-6721b2ab.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__layout-ed77219c.js",
-      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
-    ]
-  },
-  "_003-point-clouds-in-architecture-27c11cd0.js": {
-    "file": "_app/immutable/chunks/003-point-clouds-in-architecture-27c11cd0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/routes/graphic/+page.svelte": {
-    "file": "_app/immutable/components/pages/graphic/_page.svelte-3702cdd7.js",
-    "src": "src/routes/graphic/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_Nav-cd4a338e.js",
-      "_Gallery-5c3f73f7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-3674aadf.css"
-    ]
-  },
-  "src/routes/projects/+page.svelte": {
-    "file": "_app/immutable/components/pages/projects/_page.svelte-8463a792.js",
-    "src": "src/routes/projects/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_Nav-cd4a338e.js",
-      "_Card-3455c28c.js",
-      "_Grid-528a4930.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-e9c73af1.css"
-    ]
-  },
-  "_002-dwg2rvt-f7dc55a7.js": {
-    "file": "_app/immutable/chunks/002-dwg2rvt-f7dc55a7.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/routes/blog/[slug]/+page.js": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.js-11ed9821.js",
-    "src": "src/routes/blog/[slug]/+page.js",
-    "isEntry": true,
-    "imports": [
-      "_preload-helper-41c905a7.js",
-      "_dynamic-import-helper-be004503.js",
-      "_index-dc735eee.js",
-      "__page-50c75215.js"
-    ]
-  },
-  "src/routes/blog/+page.svelte": {
-    "file": "_app/immutable/components/pages/blog/_page.svelte-a36b0cc9.js",
-    "src": "src/routes/blog/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_Nav-cd4a338e.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-218a8ac1.css"
     ]
   },
   "src/routes/blog/[slug]/+page.svelte": {
@@ -618,55 +624,55 @@
       "_app/immutable/assets/_page-d7be49ec.css"
     ]
   },
-  "_004-ifc-analysis-openifcshell-0350c471.js": {
-    "file": "_app/immutable/chunks/004-ifc-analysis-openifcshell-0350c471.js",
-    "isDynamicEntry": true,
+  "_Image-e102a7de.js": {
+    "file": "_app/immutable/chunks/Image-e102a7de.js",
     "imports": [
       "_index-5cf732b6.js"
-    ]
-  },
-  "src/lib/projects/bf2.md": {
-    "file": "_app/immutable/chunks/bf2-333152ea.js",
-    "src": "src/lib/projects/bf2.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
-    ]
-  },
-  "src/routes/lectures/[slug]/+page.svelte": {
-    "file": "_app/immutable/components/pages/lectures/_slug_/_page.svelte-688eb02c.js",
-    "src": "src/routes/lectures/[slug]/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_Nav-cd4a338e.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-37769e9d.css"
+      "_app/immutable/assets/Image-3f43ee0d.css"
     ]
   },
-  "src/routes/sketchbook/+page.svelte": {
-    "file": "_app/immutable/components/pages/sketchbook/_page.svelte-722492c4.js",
-    "src": "src/routes/sketchbook/+page.svelte",
+  "src/lib/lectures/revit-api.md?raw": {
+    "file": "_app/immutable/chunks/revit-api-99a29ebe.js",
+    "src": "src/lib/lectures/revit-api.md?raw",
+    "isDynamicEntry": true
+  },
+  "_singletons-ca1e47c6.js": {
+    "file": "_app/immutable/chunks/singletons-ca1e47c6.js",
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/lib/projects/nafta-neo-bistro.md": {
+    "file": "_app/immutable/chunks/nafta-neo-bistro-01bbc464.js",
+    "src": "src/lib/projects/nafta-neo-bistro.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5cf732b6.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-d1538cec.js",
+    "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-5cf732b6.js",
       "_Nav-cd4a338e.js",
-      "_Gallery-5c3f73f7.js"
+      "_Card-3455c28c.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-3674aadf.css"
+      "_app/immutable/assets/_page-8c24f0c1.css"
     ]
   },
-  "_Gallery-5c3f73f7.js": {
-    "file": "_app/immutable/chunks/Gallery-5c3f73f7.js",
+  "_index-5cf732b6.js": {
+    "file": "_app/immutable/chunks/index-5cf732b6.js"
+  },
+  "_001-revit-project-startup-b0279d60.js": {
+    "file": "_app/immutable/chunks/001-revit-project-startup-b0279d60.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-5cf732b6.js",
-      "_Grid-528a4930.js",
-      "_Image-e102a7de.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Gallery-46f452bf.css"
+      "_index-5cf732b6.js"
     ]
   },
   "src/routes/motion-picture/+page.svelte": {
@@ -684,15 +690,6 @@
       "_app/immutable/assets/Gallery-46f452bf.css"
     ]
   },
-  "_Nav-cd4a338e.js": {
-    "file": "_app/immutable/chunks/Nav-cd4a338e.js",
-    "imports": [
-      "_index-5cf732b6.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Nav-4ff2e076.css"
-    ]
-  },
   "src/routes/photography/+page.svelte": {
     "file": "_app/immutable/components/pages/photography/_page.svelte-0adb2812.js",
     "src": "src/routes/photography/+page.svelte",
@@ -704,24 +701,6 @@
     ],
     "css": [
       "_app/immutable/assets/_page-3674aadf.css"
-    ]
-  },
-  "src/lib/lectures/revit-api.md?raw": {
-    "file": "_app/immutable/chunks/revit-api-99a29ebe.js",
-    "src": "src/lib/lectures/revit-api.md?raw",
-    "isDynamicEntry": true
-  },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-d1538cec.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5cf732b6.js",
-      "_Nav-cd4a338e.js",
-      "_Card-3455c28c.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-8c24f0c1.css"
     ]
   },
   "src/routes/code/+page.svx": {
@@ -736,8 +715,36 @@
       "_app/immutable/assets/_page-5b442fce.css"
     ]
   },
-  "__page-1056fc93.js": {
-    "file": "_app/immutable/chunks/_page-1056fc93.js",
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-de44d3c8.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-5cf732b6.js",
+      "_singletons-ca1e47c6.js",
+      "_preload-helper-41c905a7.js",
+      "_control-f5b05b5f.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js",
+      ".svelte-kit/generated/nodes/6.js",
+      ".svelte-kit/generated/nodes/7.js",
+      ".svelte-kit/generated/nodes/8.js",
+      ".svelte-kit/generated/nodes/9.js",
+      ".svelte-kit/generated/nodes/10.js",
+      ".svelte-kit/generated/nodes/11.js",
+      ".svelte-kit/generated/nodes/12.js",
+      ".svelte-kit/generated/nodes/13.js",
+      ".svelte-kit/generated/nodes/14.js"
+    ]
+  },
+  "__page-c455a45e.js": {
+    "file": "_app/immutable/chunks/_page-c455a45e.js",
     "imports": [
       "_preload-helper-41c905a7.js",
       "_dynamic-import-helper-be004503.js",
@@ -748,13 +755,6 @@
       "src/lib/lectures/qgis.md?raw",
       "src/lib/lectures/revit-api.md?raw",
       "src/lib/lectures/szkolenie-blender.md?raw"
-    ]
-  },
-  "_001-revit-project-startup-b0279d60.js": {
-    "file": "_app/immutable/chunks/001-revit-project-startup-b0279d60.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-5cf732b6.js"
     ]
   },
   "src/routes/graphic/+page.css": {
