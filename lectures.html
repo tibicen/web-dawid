@@ -45,71 +45,53 @@
 	<link href="./theme/css/prism-gruvbox-dark.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="./theme/css/global.css" media="screen">
 
-	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_page-bea4cded.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-de44d3c8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-5cf732b6.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-ca1e47c6.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/control-f5b05b5f.js">
-		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-958a1762.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-eb00e147.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-dc735eee.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-cbc6a3fd.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/lectures/_page.svelte-010d7c26.js">
+	
+		<link href="./_app/immutable/assets/8.bea4cded.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.98188be0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.a117fe6f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.fdf548d1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control.c2cf8273.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.d0147f54.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.5faa0350.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.769e10ab.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.6f9d1f14.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/layout.38d56ba7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/8.f78b1d3c.js">
 
 	<!-- Statistics -->
 	<!-- Umami -->
-	<script async defer data-website-id="55055229-61bf-4885-99a6-985a9a75049b"
-		src="https://stats.huczynski.pl/umami.js"></script>
-	<!-- Plausible -->
-	<script defer data-domain="dawid.huczynski.pl" src="https://stats2.huczynski.pl/js/script.js"></script>
-	<!-- Matomo -->
-	<script>
-		var _paq = window._paq = window._paq || [];
-		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function () {
-			var u = "//matomo.huczynski.pl/";
-			_paq.push(['setTrackerUrl', u + 'matomo.php']);
-			_paq.push(['setSiteId', '1']);
-			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-			g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
-		})();
-	</script>
-	<!-- End Matomo Code -->
-
+  <script defer src="https://umami.huczynski.pl/script.js" data-website-id="2593921b-94f7-4377-a469-13d281c01dc7"></script>
 </head>
 
 <body>
-	<div>
+	<div>  <main class="svelte-mdbk1t" data-svelte-h="svelte-18yrixu"><h1>Lectures</h1> <a href="/lectures/revit-api">Revit API</a> <a href="/lectures/szkolenie-blender">Szkolenie Blender</a> <a href="/lectures/open-source-in-architecture">Open Source</a> <a href="/lectures/project-startup">Startup projektu</a> </main> 
+			
+			<script>
+				{
+					__sveltekit_nz1yi8 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
+					const element = document.currentScript.parentElement;
 
-<main class="svelte-mdbk1t"><h1>Lectures</h1>
-	<a href="/lectures/revit-api">Revit API</a>
-	<a href="/lectures/szkolenie-blender">Szkolenie Blender</a>
-	<a href="/lectures/open-source-in-architecture">Open Source</a>
-	<a href="/lectures/revit-api">Revit API</a>
-</main>
+					const data = [null,null];
 
-
-		<script type="module" data-sveltekit-hydrate="11b11fi">
-			import { start } from "./_app/immutable/start-de44d3c8.js";
-
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="11b11fi"]').parentNode,
-				version: "1679601866042",
-				hydrate: {
-					node_ids: [0, 8],
-					data: [null,null],
-					form: null
+					Promise.all([
+						import("./_app/immutable/entry/start.98188be0.js"),
+						import("./_app/immutable/entry/app.d0147f54.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	<hr>
 	<footer>
 		Copyright 2023, Dawid Huczyński<br>Made with <a href="https://kit.svelte.dev/" target="_blank"
