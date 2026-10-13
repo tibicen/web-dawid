@@ -1,0 +1,1 @@
+import{n as e}from"../chunks/hePW80VL.js";import{n as t}from"../chunks/C_grik4_.js";var n=e({load:()=>r}),r=()=>t(301,`/lectures/revit-api`);export{n as universal};

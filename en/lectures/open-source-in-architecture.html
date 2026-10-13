@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#FFFCF0" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#100F0F" media="(prefers-color-scheme: dark)" />
+		<link rel="icon" href="../../svg/logo-dh.svg" type="image/svg+xml" />
+		<link rel="stylesheet" href="../../theme/css/prism-gruvbox-dark.css" />
+		<script>
+			// Apply the saved theme before first paint, so the page never flashes the wrong one.
+			try {
+				if (localStorage.theme) document.documentElement.dataset.theme = localStorage.theme;
+			} catch {}
+		</script>
+		<script
+			defer
+			src="https://stats.leysa.pl/script.js"
+			data-website-id="b39ab853-ca61-4816-9cd4-1452bb3d8b09"
+		></script>
+		<link href="../../_app/immutable/entry/start.DpYewLHT.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DevgSArH.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CtxnMb3m.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BsxEdnHC.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CnSGizgM.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CLErkAun.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CUDB9b0h.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.DS1-9Z9i.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/D583Z7M3.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.qXICtAp9.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/hePW80VL.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BwVWKz-i.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CHKyotkP.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BRiRotbt.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DfEOgQw9.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CciOfg3n.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/9.CochhICa.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CTjXV3LW.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CghW0NDI.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/C_grik4_.js" rel="modulepreload">
+		<!--12qhfyh--><!--[0--><meta name="description" content="Talks on spatial analysis, Revit API, CI/CD, open source tools and data."/> <link rel="canonical" href="https://dawid.huczynski.pl/en/lectures/open-source-in-architecture"/> <link rel="alternate" hreflang="pl" href="https://dawid.huczynski.pl/lectures/open-source-in-architecture"/> <link rel="alternate" hreflang="en" href="https://dawid.huczynski.pl/en/lectures/open-source-in-architecture"/> <link rel="alternate" hreflang="x-default" href="https://dawid.huczynski.pl/lectures/open-source-in-architecture"/> <meta property="og:type" content="article"/> <meta property="og:locale" content="en_GB"/> <meta property="og:site_name" content="Dawid Huczyński"/> <meta property="og:url" content="https://dawid.huczynski.pl/en/lectures/open-source-in-architecture"/> <meta property="og:title" content="Open Source in Architecture – Dawid Huczyński"/> <meta property="og:description" content="Talks on spatial analysis, Revit API, CI/CD, open source tools and data."/> <meta property="og:image" content="https://dawid.huczynski.pl/images/dh.webp"/> <meta name="twitter:card" content="summary"/><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://dawid.huczynski.pl/#person","name":"Dawid Huczyński","url":"https://dawid.huczynski.pl","image":"https://dawid.huczynski.pl/images/dh.webp","email":"dawid.huczynski@gmail.com","telephone":"+48602635894","jobTitle":"Architekt, programista","address":{"@type":"PostalAddress","addressLocality":"Wrocław","addressCountry":"PL"},"worksFor":{"@type":"Organization","name":"Leysa","url":"https://leysa.pl"},"sameAs":["https://www.linkedin.com/in/huczynski","https://github.com/tibicen","https://gitlab.com/tibicen","https://www.youtube.com/channel/UCpQBwSrtz_f6AMIc6Atprzg","https://leysa.pl"],"knowsAbout":["Architektura","BIM","Autodesk Revit","IFC","GIS","Python","Chmury punktów","Blender"],"description":"Dawid Huczyński: fully licensed architect and software developer. BIM automation, GIS analysis, data in energy and construction. Projects, code, graphics, talks."}</script><!----><!----><title>Open Source in Architecture – Dawid Huczyński</title>
+		<link href="../../_app/immutable/assets/Contact.DZfd4DNX.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Tools.CINSvtt4.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.Di7DLXH6.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Author.BNZfZBve.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/9.CwFTJh66.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!--[0--><!--[--><!--[0--><!--[--><!--[-1--><!--[--><nav class="bar svelte-1s3nche"><a href="/en/lectures" class="svelte-1s3nche">← Back</a> <div class="tools svelte-i313aa"><a class="round svelte-i313aa" href="/lectures/open-source-in-architecture" hreflang="pl" lang="pl" title="Polski" aria-label="Polski">PL</a> <button class="round svelte-i313aa" type="button" aria-label="Toggle light/dark theme" title="Toggle light/dark theme"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2"></circle><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"></path></svg></button></div><!----></nav> <main id="main" class="slides"><!--[--><section id="1" class="svelte-1s3nche"><!----><h1>Open Source in Architecture</h1>
+<h2>Tools that make work easier</h2>
+<p><a href="https://dawid.huczynski.pl/en/lectures/open-source-in-architecture">dawid.huczynski.pl/en/lectures/open-source-in-architecture</a></p>
+<!----> <!--[0--><div class="author-card svelte-1s3nche"><!--$s1--><aside class="author svelte-1j8uocw" aria-labelledby="s1-name"><img src="/images/dh.webp" alt="" width="96" height="96" class="svelte-1j8uocw"/> <div><p class="kicker svelte-1j8uocw">About the author</p> <p class="name svelte-1j8uocw" id="s1-name">Dawid Huczyński</p> <p class="role svelte-1j8uocw">Architect, developer, data engineer<!--[-1--><!--]--></p> <p class="bio svelte-1j8uocw">A fully licensed architect and software developer. He automates processes in construction and energy: BIM, spatial data, point clouds. Runs Leysa, an engineering practice.</p> <p class="links svelte-1j8uocw"><a href="/en/about">More about me</a> <a href="https://www.linkedin.com/in/huczynski">LinkedIn</a> <a href="https://github.com/tibicen">GitHub</a></p></div></aside><!----></div><!--]--></section><section id="2" class="svelte-1s3nche"><!----><h1>Topics</h1>
+<ul>
+<li>Krita</li>
+<li>Gimp + BIMP</li>
+<li>Inkscape</li>
+<li>QGIS (Geoportal)</li>
+<li>Blender</li>
+<li>Photogrammetry</li>
+<li>A new way to do a concept</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="3" class="svelte-1s3nche"><!----><h1>Krita</h1>
+<p>Something to draw with</p>
+<!----> <!--[-1--><!--]--></section><section id="4" class="svelte-1s3nche"><!----><h1>Krita</h1>
+<ul>
+<li>layout</li>
+<li>layers</li>
+<li>groups</li>
+<li>layer filters</li>
+<li>masks</li>
+<li>brushes</li>
+<li>transformations</li>
+<li>selection</li>
+<li>healing</li>
+<li>optimisation</li>
+<li>saving</li>
+<li>printing</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="5" class="svelte-1s3nche"><!----><h1>Gimp</h1>
+<p>Krita&#39;s companion</p>
+<!----> <!--[-1--><!--]--></section><section id="6" class="svelte-1s3nche"><!----><h1>Gimp</h1>
+<ul>
+<li>layout</li>
+<li>layers</li>
+<li>selection, quick mask</li>
+<li>colours</li>
+<li>brushes</li>
+<li>transformations</li>
+<li>optimisation</li>
+<li>saving</li>
+<li>printing</li>
+<li>BIMP</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="7" class="svelte-1s3nche"><!----><h1>Inkscape</h1>
+<p>Something for presentations and diagrams</p>
+<!----> <!--[-1--><!--]--></section><section id="8" class="svelte-1s3nche"><!----><h1>Inkscape</h1>
+<ul>
+<li>layout</li>
+<li>tools</li>
+<li>document</li>
+<li>layers</li>
+<li>fill and stroke</li>
+<li>colours</li>
+<li>raise and lower</li>
+<li>masks, clipping photos</li>
+<li>paths and combining</li>
+<li>trace bitmap</li>
+<li>grouping</li>
+<li>path effects editor</li>
+<li>text and typefaces</li>
+<li>align and distribute</li>
+<li>clones</li>
+<li>hatching</li>
+<li>saving</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="9" class="svelte-1s3nche"><!----><h1>QGIS</h1>
+<p>What every project<br>should start with</p>
+<!----> <!--[-1--><!--]--></section><section id="10" class="svelte-1s3nche"><!----><h1>QGIS</h1>
+<ul>
+<li>layout</li>
+<li>layers</li>
+<li>services</li>
+<li>XYZ</li>
+<li>geodetic coordinate system</li>
+<li>vector layers</li>
+<li>data</li>
+<li>Geoportal</li>
+<li>point clouds</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="11" class="svelte-1s3nche"><!----><h1>Blender</h1>
+<p>A bonus:<br>something for visualisation</p>
+<!----> <!--[-1--><!--]--></section><section id="12" class="svelte-1s3nche"><!----><h1>Blender</h1>
+<ul>
+<li>interface</li>
+<li>objects</li>
+<li>mesh</li>
+<li>materials</li>
+<li>lighting</li>
+<li>camera</li>
+<li>rendering</li>
+<li>Collections</li>
+<li>boolean modelling</li>
+<li>parametric modelling</li>
+<li>Asset Browser</li>
+<li>sculpting</li>
+<li>post-processing</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="13" class="svelte-1s3nche"><!----><h1>Blender</h1>
+<p>Add-ons:</p>
+<ul>
+<li>Archimesh</li>
+<li>BlenderBIM</li>
+<li>BlenderGIS</li>
+<li>PointCloudVisualizer</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="14" class="svelte-1s3nche"><!----><h1>Photogrammetry</h1>
+<p>or: point clouds</p>
+<!----> <!--[-1--><!--]--></section><section id="15" class="svelte-1s3nche"><!----><h1>Photogrammetry</h1>
+<ul>
+<li>interface</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="16" class="svelte-1s3nche"><!----><h1>Thank you</h1>
+<p>Questions?</p>
+<!----> <!--[-1--><!--]--></section><!--]--></main><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!--]--><!--]--><!----> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1dnz2u0 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						version: "1791889537902"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("../../_app/immutable/entry/start.DpYewLHT.js").then(async (kit) => {
+						kit.init(__sveltekit_1dnz2u0);
+						const app = await import("../../_app/immutable/entry/app.DS1-9Z9i.js");
+						kit.start(app, element, {
+							node_ids: [0, 9],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

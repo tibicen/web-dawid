@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#FFFCF0" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#100F0F" media="(prefers-color-scheme: dark)" />
+		<link rel="icon" href="../../svg/logo-dh.svg" type="image/svg+xml" />
+		<link rel="stylesheet" href="../../theme/css/prism-gruvbox-dark.css" />
+		<script>
+			// Apply the saved theme before first paint, so the page never flashes the wrong one.
+			try {
+				if (localStorage.theme) document.documentElement.dataset.theme = localStorage.theme;
+			} catch {}
+		</script>
+		<script
+			defer
+			src="https://stats.leysa.pl/script.js"
+			data-website-id="b39ab853-ca61-4816-9cd4-1452bb3d8b09"
+		></script>
+		<link href="../../_app/immutable/entry/start.DpYewLHT.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DevgSArH.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CtxnMb3m.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BsxEdnHC.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CnSGizgM.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CLErkAun.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CUDB9b0h.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.DS1-9Z9i.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/D583Z7M3.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.qXICtAp9.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/hePW80VL.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BwVWKz-i.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CHKyotkP.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BRiRotbt.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DfEOgQw9.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CciOfg3n.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/9.CochhICa.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CTjXV3LW.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CghW0NDI.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/C_grik4_.js" rel="modulepreload">
+		<!--12qhfyh--><!--[0--><meta name="description" content="Talks on spatial analysis, Revit API, CI/CD, open source tools and data."/> <link rel="canonical" href="https://dawid.huczynski.pl/en/lectures/qgis"/> <link rel="alternate" hreflang="pl" href="https://dawid.huczynski.pl/lectures/qgis"/> <link rel="alternate" hreflang="en" href="https://dawid.huczynski.pl/en/lectures/qgis"/> <link rel="alternate" hreflang="x-default" href="https://dawid.huczynski.pl/lectures/qgis"/> <meta property="og:type" content="article"/> <meta property="og:locale" content="en_GB"/> <meta property="og:site_name" content="Dawid Huczyński"/> <meta property="og:url" content="https://dawid.huczynski.pl/en/lectures/qgis"/> <meta property="og:title" content="QGIS – Dawid Huczyński"/> <meta property="og:description" content="Talks on spatial analysis, Revit API, CI/CD, open source tools and data."/> <meta property="og:image" content="https://dawid.huczynski.pl/images/dh.webp"/> <meta name="twitter:card" content="summary"/><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://dawid.huczynski.pl/#person","name":"Dawid Huczyński","url":"https://dawid.huczynski.pl","image":"https://dawid.huczynski.pl/images/dh.webp","email":"dawid.huczynski@gmail.com","telephone":"+48602635894","jobTitle":"Architekt, programista","address":{"@type":"PostalAddress","addressLocality":"Wrocław","addressCountry":"PL"},"worksFor":{"@type":"Organization","name":"Leysa","url":"https://leysa.pl"},"sameAs":["https://www.linkedin.com/in/huczynski","https://github.com/tibicen","https://gitlab.com/tibicen","https://www.youtube.com/channel/UCpQBwSrtz_f6AMIc6Atprzg","https://leysa.pl"],"knowsAbout":["Architektura","BIM","Autodesk Revit","IFC","GIS","Python","Chmury punktów","Blender"],"description":"Dawid Huczyński: fully licensed architect and software developer. BIM automation, GIS analysis, data in energy and construction. Projects, code, graphics, talks."}</script><!----><!----><title>QGIS – Dawid Huczyński</title>
+		<link href="../../_app/immutable/assets/Contact.DZfd4DNX.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Tools.CINSvtt4.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.Di7DLXH6.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Author.BNZfZBve.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/9.CwFTJh66.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!--[0--><!--[--><!--[0--><!--[--><!--[-1--><!--[--><nav class="bar svelte-1s3nche"><a href="/en/lectures" class="svelte-1s3nche">← Back</a> <div class="tools svelte-i313aa"><a class="round svelte-i313aa" href="/lectures/qgis" hreflang="pl" lang="pl" title="Polski" aria-label="Polski">PL</a> <button class="round svelte-i313aa" type="button" aria-label="Toggle light/dark theme" title="Toggle light/dark theme"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2"></circle><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"></path></svg></button></div><!----></nav> <main id="main" class="slides"><!--[--><section id="1" class="svelte-1s3nche"><!----><h1>QGIS</h1>
+<h2>Or: what every project should start with</h2>
+<p><a href="https://dawid.huczynski.pl/en/lectures/qgis">dawid.huczynski.pl/en/lectures/qgis</a></p>
+<!----> <!--[0--><div class="author-card svelte-1s3nche"><!--$s1--><aside class="author svelte-1j8uocw" aria-labelledby="s1-name"><img src="/images/dh.webp" alt="" width="96" height="96" class="svelte-1j8uocw"/> <div><p class="kicker svelte-1j8uocw">About the author</p> <p class="name svelte-1j8uocw" id="s1-name">Dawid Huczyński</p> <p class="role svelte-1j8uocw">Architect, developer, data engineer<!--[-1--><!--]--></p> <p class="bio svelte-1j8uocw">A fully licensed architect and software developer. He automates processes in construction and energy: BIM, spatial data, point clouds. Runs Leysa, an engineering practice.</p> <p class="links svelte-1j8uocw"><a href="/en/about">More about me</a> <a href="https://www.linkedin.com/in/huczynski">LinkedIn</a> <a href="https://github.com/tibicen">GitHub</a></p></div></aside><!----></div><!--]--></section><section id="2" class="svelte-1s3nche"><!----><h1>Height systems</h1>
+<ul>
+<li>PL-KRON86-NH – until December 2023 at the latest</li>
+<li>PL-EVRF2007-NH</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="3" class="svelte-1s3nche"><!----><h1>Map projections</h1>
+<video class="media-element tErWI93xEKrI2OkozPs7J" loop="" style="margin:0 auto;max-height:700px" muted="" width="480" height="480" autoplay>
+ <source src="https://external-preview.redd.it/aXDfu0MCpk3IlYhYoi6qwCkQJtkC8899g6NMLQSgtDM.gif?format=mp4&amp;s=1781c829ba794de3588c808a17cc7dfb213f84e6">
+</video><!----> <!--[-1--><!--]--></section><section id="4" class="svelte-1s3nche"><!----><h1>What deceives us?</h1>
+<ul>
+<li><a href="https://engaging-data.com/country-centered-map-projections/?p=0.000,0.000&amp;cat=mercator&amp;angle=0">https://engaging-data.com/pages/scripts/d3projections/projectioncountry2.html</a></li>
+<li><a href="https://www.thetruesize.com/">https://www.thetruesize.com/</a></li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="5" class="svelte-1s3nche"><!----><h1>Quiz</h1>
+<p>Which geographic coordinate system do we use in Poland?</p>
+<!----> <!--[-1--><!--]--></section><section id="6" class="svelte-1s3nche"><!----><h1>Geodetic reference frames in Poland</h1>
+<p>the mathematical and physical realisations<br>of the European Terrestrial Reference System ETRS89,<br>marked as:</p>
+<ul>
+<li>PL-ETRF2000</li>
+<li><strong>PL-ETRF89</strong></li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="7" class="svelte-1s3nche"><!----><h1>Planar (projected) coordinate systems</h1>
+<ul>
+<li>PL-LAEA</li>
+<li>PL-LCC</li>
+<li>PL-UTM</li>
+<li><strong>PL-2000</strong> – 15ºE, 18ºE, 21ºE and 24ºE, numbered 5, 6, 7 and 8.</li>
+<li>PL-1992</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="8" class="svelte-1s3nche"><!----><h1>QGIS</h1>
+<p>A sweet misalliance of Google Maps and the geoportal.</p>
+<!----> <!--[-1--><!--]--></section><section id="9" class="svelte-1s3nche"><!----><h1>Coordinate system</h1>
+<ul>
+<li>EPSG:2180 - whole of Poland, PL-1992</li>
+<li>EPSG:2176 - PL-2000/15</li>
+<li>EPSG:2177 - PL-2000/18</li>
+<li>EPSG:2178 - PL-2000/21</li>
+<li>EPSG:2179 - PL-2000/24</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="10" class="svelte-1s3nche"><!----><h1>Layout</h1>
+<p><img src="https://lh3.googleusercontent.com/pw/AM-JKLUKCbDB2H4ht1zUhCE5qiDH6nSPGx2z4O2KjWZ_7D1LrcTifIj186xsnfseGeHKpXQi1Bym4PMYe7KMPMj78CWzgHrRyQg4HCp_qwv5kMHNrj_DlE-CDUf5pDDgliEY-kMBQQ0x3gRLkBQXrhSvAEpbAA=w1920-h898-no?authuser=0" alt=""></p>
+<!----> <!--[-1--><!--]--></section><section id="11" class="svelte-1s3nche"><!----><h1>Plugins</h1>
+<ul>
+<li><strong>Pobieracz danych GUGiK</strong> (GUGiK data downloader)</li>
+<li>Usługa Lokalizacji Działek Katastralnych (cadastral plot locator)</li>
+<li>Przechwyć wysokość GUGiK NMT (pick DTM height)</li>
+<li>Oblicz Wysokość GUGiK NMT (compute DTM height)</li>
+<li>Wtyczka APP (spatial planning acts downloader)</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="12" class="svelte-1s3nche"><!----><h1>Layers</h1>
+<ul>
+<li>raster</li>
+<li>vector:<ul>
+<li>points</li>
+<li>lines</li>
+<li>polygons</li>
+</ul>
+</li>
+<li>data</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="13" class="svelte-1s3nche"><!----><h1>Services</h1>
+<ul>
+<li>XYZ</li>
+<li>WMS / WMTS</li>
+<li>WFS</li>
+</ul>
+<p>A file that loads the geoportal raster layers:<br>
+<code>H:\\05_BIM STANDARD\\QGIS-GEOPORTAL.xml</code></p>
+<!----> <!--[-1--><!--]--></section><section id="14" class="svelte-1s3nche"><!----><h1>Geoportal</h1>
+<!----> <!--[-1--><!--]--></section><section id="15" class="svelte-1s3nche"><!----><h1>Analysis</h1>
+<p>What can we do with this knowledge?</p>
+<ul>
+<li>check the plot</li>
+<li>check heights</li>
+<li>check slopes</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="16" class="svelte-1s3nche"><!----><h1>GeoTIFF and GeoPDF</h1>
+<!----> <!--[-1--><!--]--></section><section id="17" class="svelte-1s3nche"><!----><h1>Data and layer types</h1>
+<ul>
+<li><a href="https://www.geoportal.gov.pl/uslugi">https://www.geoportal.gov.pl/uslugi</a></li>
+<li>INSPIRE</li>
+<li>BDOO - general geographic objects database</li>
+<li>BDOT10k - topographic objects database</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="18" class="svelte-1s3nche"><!----><h1>Data</h1>
+<ul>
+<li>Styles</li>
+<li>Labels</li>
+<li>Parametrics</li>
+</ul>
+<!----> <!--[-1--><!--]--></section><section id="19" class="svelte-1s3nche"><!----><h1>Point clouds</h1>
+<p>Bonus</p>
+<!----> <!--[-1--><!--]--></section><!--]--></main><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!--]--><!--]--><!----> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1dnz2u0 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						version: "1791889537902"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("../../_app/immutable/entry/start.DpYewLHT.js").then(async (kit) => {
+						kit.init(__sveltekit_1dnz2u0);
+						const app = await import("../../_app/immutable/entry/app.DS1-9Z9i.js");
+						kit.start(app, element, {
+							node_ids: [0, 9],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

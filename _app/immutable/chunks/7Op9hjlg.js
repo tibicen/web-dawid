@@ -1,0 +1,1 @@
+import{I as e,m as t,q as n,x as r,y as i}from"./CnSGizgM.js";var a=r(`<div class="grid svelte-1hhz0mg"><!></div>`);function o(r,o){var s=a(),c=e(s);t(c,()=>o.children),n(s),i(r,s)}export{o as t};

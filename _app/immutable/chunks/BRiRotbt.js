@@ -1,0 +1,1 @@
+var e=e=>e.toLowerCase().replace(/ł/g,`l`).normalize(`NFD`).replace(/[̀-ͯ]/g,``).replace(/[^a-z0-9]+/g,`-`).replace(/^-|-$/g,``);export{e as t};
